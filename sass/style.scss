@@ -5,7 +5,7 @@
 @import "./components/boutons";
 
 .presentation{
-background-color:$color-fond;
+@include fond;
 
     &__position{
         background-color: #eaeaea;
@@ -20,8 +20,33 @@ background-color:$color-fond;
         @include flex-column;
         &__opt{
             @include flex-row;
+            
+            & p{
+                @include cadre;
+            @include fond;
+            padding: 20px;
+            font-size: medium;
+            .rond{
+                color: $color-primary;
+            }
+            .opt{
+                color: #7e7e7e;
+            }
+            }
         }
     
+}
+#restaurant{
+    @include fond;
+    .restau{
+        &__prev{
+            @include cadre;
+            overflow: hidden;
+            &--txt{
+                @include flex-row;
+            }
+        }
+    }
 }
 header{
     h1 {

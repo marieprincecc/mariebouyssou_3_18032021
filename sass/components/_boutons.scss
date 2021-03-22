@@ -1,8 +1,11 @@
 
 .btn{
     @include degrade;
-    border-radius: 30px;
+    @include cadre;
     color: white;
     font-size: medium;
-    padding: 10px;
+    margin-bottom: 55px;
+    margin-top: 25px;
+    border: none;
+
 }

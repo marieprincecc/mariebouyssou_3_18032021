@@ -23,7 +23,6 @@ body footer h3 {
 body img {
   width: 350px;
   height: 250px;
-  overflow: hidden;
   object-fit: cover;
 }
 body a {
@@ -37,9 +36,13 @@ body ul {
 .btn {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   color: white;
   font-size: medium;
-  padding: 10px;
+  margin-bottom: 55px;
+  margin-top: 25px;
+  border: none;
 }
 
 .presentation {
@@ -63,6 +66,35 @@ body ul {
   text-align: center;
 }
 .fonction__opt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fonction__opt p {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  background-color: #f6f6f6;
+  padding: 20px;
+  font-size: medium;
+}
+.fonction__opt p .rond {
+  color: #9356dc;
+}
+.fonction__opt p .opt {
+  color: #7e7e7e;
+}
+
+#restaurant {
+  background-color: #f6f6f6;
+}
+#restaurant .restau__prev {
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  overflow: hidden;
+}
+#restaurant .restau__prev--txt {
   display: flex;
   justify-content: space-around;
   align-items: center;
