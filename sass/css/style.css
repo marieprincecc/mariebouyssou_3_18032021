@@ -51,6 +51,7 @@ body ul {
 .presentation__position {
   background-color: #eaeaea;
   text-align: center;
+  padding: 0.5px;
 }
 .presentation__txt {
   display: flex;
