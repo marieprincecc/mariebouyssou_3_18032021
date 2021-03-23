@@ -1,0 +1,24 @@
+@keyframes rotation-cookie{
+    from{
+      transform:rotate(0deg);
+    }
+    to{
+      transform:rotate(360deg);
+    }
+}
+@keyframes opa-cookie{
+    from{
+      opacity:1;
+    }
+    to{
+      opacity:0;
+    }
+  }
+  @keyframes loader{
+    0%{
+        opacity: 0;
+    }
+    15%{opacity:1;}
+    85%{ opacity:1;}
+    100%{opacity: 0;}
+}
