@@ -27,6 +27,7 @@
             @include fond;
             padding: 20px;
             font-size: medium;
+            padding: 20px;
             .rond{
                 color: $color-primary;
             }
@@ -41,11 +42,34 @@
     @include fond;
     .restau{
         &__prev{
+            figure{
             @include cadre;
             overflow: hidden;
-            &--txt{
+            background-color: white;
+            margin: 10px;
+            width: 340px;
+            height: 240px;
+            position: relative;
+            .new{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: $color-terciary;
+                color:#008766;
+                padding: 3px;
+                }
+                &--txt{
                 @include flex-row;
-            }
+                }
+                &--img{
+                 z-index: -1;
+                    .new{
+                    position: relative;
+                    z-index: 1;
+                    object-position: right top;
+                    }
+                }        
+            }    
         }
     }
 }
