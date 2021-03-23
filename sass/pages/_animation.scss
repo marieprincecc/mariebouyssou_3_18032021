@@ -1,8 +1,4 @@
-.cook, .cookie{
-    font-size:250%;
-     color:#cbb35e;
-   
-   }
+
    .loader{
      background-color:rgb(122 88 55);
      position: fixed;
@@ -13,26 +9,31 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     animation: loader 3000ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+    
+    .cookie{
+        animation:rotation-cookie;
+         animation-duration:900ms;
+         animation-delay:1000ms;
+         animation-iteration-count:2;
+         animation-timing-function:ease-in-out;
+         font-size:250%;
+         color:#cbb35e;
+       }
+       .cook{
+        animation:opa-cookie;
+        animation-duration:600ms;
+        animation-delay: 400ms;
+        animation-fill-mode:forwards;
+        font-size:250%;
+        color:#cbb35e;
+      }
    }
   
    
    
-   .loader .cookie{
-    animation:rotation-cookie;
-     animation-duration:900ms;
-     animation-delay:1000ms;
-     animation-iteration-count:2;
-     animation-timing-function:ease-in-out;
-   }
-   .loader .cook{
-     animation:opa-cookie;
-     animation-duration:600ms;
-     animation-delay: 400ms;
-     animation-fill-mode:forwards;
-   }
-   .loader{
-    animation: loader 3000ms;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
    
-}
+   
+   

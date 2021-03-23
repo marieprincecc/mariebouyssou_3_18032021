@@ -73,6 +73,68 @@ body footer h4 {
   margin-top: 25px;
 }
 
+.loader {
+  background-color: #7a5837;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(122, 88, 55, 0.8);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 3000ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+.loader .cookie {
+  animation: rotation-cookie;
+  animation-duration: 900ms;
+  animation-delay: 1000ms;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  font-size: 250%;
+  color: #cbb35e;
+}
+.loader .cook {
+  animation: opa-cookie;
+  animation-duration: 600ms;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+  font-size: 250%;
+  color: #cbb35e;
+}
+
+@keyframes rotation-cookie {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opa-cookie {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 header h1 {
   margin: 15px;
 }
