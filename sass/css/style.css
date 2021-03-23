@@ -78,7 +78,7 @@ body footer h4 {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(122, 88, 55, 0.8);
+  background-color: #f6f6f6;
   opacity: 0;
   display: flex;
   justify-content: center;
