@@ -12,6 +12,10 @@ body h2 {
 body h3 {
   font-weight: 700;
 }
+body .presentation__txt--p {
+  font-weight: 300;
+  font-size: large;
+}
 body footer {
   color: white;
   background-color: #353535;
@@ -25,6 +29,9 @@ body img {
   height: 160px;
   object-fit: cover;
 }
+body h2 {
+  margin: 40px 15px 10px 15px;
+}
 body a {
   text-decoration: none;
   color: black;
@@ -36,22 +43,30 @@ body ul {
 .btn {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
+  padding: 20px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  border: none;
   color: white;
   font-size: medium;
   margin-bottom: 55px;
   margin-top: 25px;
-  border: none;
-  padding: 20px;
+}
+
+header h1 {
+  margin: 15px;
 }
 
 .presentation {
   background-color: #f6f6f6;
 }
 .presentation__position {
-  background-color: #eaeaea;
+  background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
   text-align: center;
   padding: 0.5px;
+}
+.presentation__position p .marquer {
+  position: relative;
+  right: 10px;
 }
 .presentation__txt {
   display: flex;
@@ -60,41 +75,64 @@ body ul {
   text-align: center;
 }
 
-.fonction {
+#fonctionnement {
+  padding-bottom: 70px;
+}
+#fonctionnement .fonction {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
-.fonction__opt {
+#fonctionnement .fonction__opt {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.fonction__opt p {
-  border-radius: 30px;
+#fonctionnement .fonction__opt p {
+  border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   background-color: #f6f6f6;
   padding: 20px;
   font-size: medium;
   padding: 20px;
+  width: 260px;
+  margin-bottom: 8px;
 }
-.fonction__opt p .rond {
+#fonctionnement .fonction__opt p .rond {
   color: #9356dc;
+  position: relative;
+  z-index: 0;
+  right: 50px;
 }
-.fonction__opt p .opt {
+#fonctionnement .fonction__opt p .rond .cercle {
+  font-size: x-large;
+}
+#fonctionnement .fonction__opt p .rond__chiffre {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  left: 7px;
+  bottom: 4px;
+  font-size: small;
+}
+#fonctionnement .fonction__opt p .opt {
   color: #7e7e7e;
+  font-size: x-large;
+  position: relative;
+  right: 15px;
 }
 
 #restaurant {
   background-color: #f6f6f6;
+  padding-top: 10px;
 }
 #restaurant .restau__prev figure {
-  border-radius: 30px;
+  border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   overflow: hidden;
   background-color: white;
-  margin: 10px;
+  margin: 20px 10px 10px 10px;
   width: 340px;
   height: 240px;
   position: relative;
@@ -105,7 +143,9 @@ body ul {
   right: 15px;
   background-color: #99e2d0;
   color: #008766;
-  padding: 3px;
+  padding: 6px 10px 6px 10px;
+  font-size: smaller;
+  font-weight: bold;
 }
 #restaurant .restau__prev figure--txt {
   display: flex;

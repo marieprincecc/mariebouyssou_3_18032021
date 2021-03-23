@@ -1,12 +1,12 @@
 
 .btn{
     @include degrade;
-    @include cadre;
+    @include btn;
     color: white;
     font-size: medium;
     margin-bottom: 55px;
     margin-top: 25px;
-    border: none;
-    padding: 20px;
+    
+    
 
 }

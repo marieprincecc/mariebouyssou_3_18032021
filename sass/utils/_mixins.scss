@@ -19,9 +19,14 @@
     
 }
 @mixin cadre {
+    border-radius: 22px;    
+    box-shadow:$ombre;
+}
+@mixin btn {
     border-radius: 30px;
-    
+    padding: 20px;
     box-shadow: 0px 6px 9px -5px rgba(130,130,130,0.88);
+    border: none;
 }
 @mixin fond {
     background-color: $color-fond;    
