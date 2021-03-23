@@ -14,9 +14,8 @@
 }
 @mixin flex-row {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+    justify-content: space-between;
+      
 }
 @mixin cadre {
     border-radius: 22px;    
