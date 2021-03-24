@@ -1,6 +1,7 @@
 
    .loader{
-     background-color:rgb(122 88 55);
+     z-index: -1;
+     
      position: fixed;
      height: 100%;
      width: 100%;
@@ -9,9 +10,9 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     animation: loader 3000ms;
+     animation: loader 2967.04ms;
     animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: cubic-bezier(.28,.89,0,1.08);
     
     .cookie{
         animation:rotation-cookie;
@@ -25,7 +26,6 @@
        .cook{
         animation:opa-cookie;
         animation-duration:600ms;
-        animation-delay: 400ms;
         animation-fill-mode:forwards;
         font-size:250%;
         color:#cbb35e;

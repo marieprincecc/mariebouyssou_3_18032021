@@ -27,6 +27,7 @@ body footer h4 {
 }
 
 body {
+  z-index: 1;
   margin: 0%;
 }
 body img {
@@ -74,7 +75,7 @@ body footer h4 {
 }
 
 .loader {
-  background-color: #7a5837;
+  z-index: -1;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -83,9 +84,9 @@ body footer h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 3000ms;
+  animation: loader 2967.04ms;
   animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.28, 0.89, 0, 1.08);
 }
 .loader .cookie {
   animation: rotation-cookie;
@@ -99,7 +100,6 @@ body footer h4 {
 .loader .cook {
   animation: opa-cookie;
   animation-duration: 600ms;
-  animation-delay: 400ms;
   animation-fill-mode: forwards;
   font-size: 250%;
   color: #cbb35e;
@@ -114,24 +114,34 @@ body footer h4 {
   }
 }
 @keyframes opa-cookie {
-  from {
+  0% {
+    z-index: 3;
     opacity: 1;
   }
-  to {
+  10% {
+    z-index: 3;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
     opacity: 0;
   }
 }
 @keyframes loader {
   0% {
+    z-index: 3;
     opacity: 0;
   }
   15% {
+    z-index: 3;
     opacity: 1;
   }
   85% {
+    z-index: 3;
     opacity: 1;
   }
   100% {
+    z-index: 3;
     opacity: 0;
   }
 }
@@ -217,7 +227,7 @@ header h1 {
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   overflow: hidden;
   background-color: white;
-  margin: 20px 10px 10px 16px;
+  margin: 20px 10px 10px 10px;
   width: 340px;
   height: 240px;
   position: relative;
