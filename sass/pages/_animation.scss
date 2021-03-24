@@ -24,13 +24,32 @@
          color:#cbb35e;
        }
        .cook{
-        animation:opa-cookie;
+        animation:anim-opacity;
         animation-duration:600ms;
         animation-fill-mode:forwards;
         font-size:250%;
         color:#cbb35e;
       }
    }
+   
+  
+     
+   
+   
+   
+   .coeur:focus{
+     outline: none;
+     
+     &>.coeur__0{
+      opacity: 0;
+      transition: 350ms;
+  
+     } 
+   }
+  
+  
+  
+  
   
    
    

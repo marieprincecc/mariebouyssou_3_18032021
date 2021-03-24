@@ -74,6 +74,13 @@ body footer h4 {
   margin-top: 25px;
 }
 
+.coeur {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .loader {
   z-index: -1;
   position: fixed;
@@ -98,11 +105,19 @@ body footer h4 {
   color: #cbb35e;
 }
 .loader .cook {
-  animation: opa-cookie;
+  animation: anim-opacity;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
   font-size: 250%;
   color: #cbb35e;
+}
+
+.coeur:focus {
+  outline: none;
+}
+.coeur:focus > .coeur__0 {
+  opacity: 0;
+  transition: 350ms;
 }
 
 @keyframes rotation-cookie {
@@ -113,7 +128,7 @@ body footer h4 {
     transform: rotate(360deg);
   }
 }
-@keyframes opa-cookie {
+@keyframes anim-opacity {
   0% {
     z-index: 3;
     opacity: 1;
@@ -260,13 +275,10 @@ header h1 {
 }
 #restaurant .restau__prev--txt .coeur__0 {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   right: -41px;
   color: #1f1f1f;
-}
-#restaurant .restau__prev--txt .coeur__1 {
-  z-index: 1;
-  display: none;
+  background-color: white;
 }
 
 header h1 {

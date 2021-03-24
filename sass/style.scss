@@ -6,7 +6,7 @@
 @import "./utils/listes";
 @import "./pages/animation";
 @import "./utils/keyframe";
-
+@import "./utils/conditions";
 header{
     h1{
         margin: 15px;
@@ -119,14 +119,14 @@ header{
                     margin-right: 10px;
                     &__0{
                         position: relative;
-                        z-index: 2; 
+                        z-index: 1; 
                         right: -41px;
                         color: #1f1f1f;
+                        background-color: white;
                       }
-                      &__1{
-                        z-index: 1;
-                       display: none;
-                    }
+                      
+                       
+                    
                 }
                 
                
