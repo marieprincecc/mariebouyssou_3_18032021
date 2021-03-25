@@ -180,7 +180,7 @@ footer {
 }
 @media (min-width: 1024px) {
   footer {
-    width: 35%;
+    width: 30%;
   }
 }
 footer h4 {
@@ -270,7 +270,7 @@ footer h4 {
 }
 @media (min-width: 1024px) {
   .presentation {
-    width: 35%;
+    width: 30%;
   }
 }
 .presentation__position {
@@ -306,7 +306,7 @@ footer h4 {
 }
 @media (min-width: 1024px) {
   #fonctionnement {
-    width: 35%;
+    width: 30%;
   }
 }
 #fonctionnement .fonction {
