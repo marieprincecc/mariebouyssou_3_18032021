@@ -1,6 +1,12 @@
 
 header{
     height: 50px;
+    @include media-lg{
+        height: auto;
+    }
+    @include media-tab{
+        height: auto;
+    }
     h1 {
         text-align: center;
         margin: 15px;

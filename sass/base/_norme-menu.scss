@@ -1,2 +1,10 @@
 img{
     width: 450px;}
+    .coeur{
+        background-color:$color-fond;
+       position: relative;
+       right: 20px;
+        &__0{
+            background-color: $color-fond;
+        }
+    }

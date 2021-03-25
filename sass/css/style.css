@@ -3,6 +3,9 @@
 body {
   font-family: "roboto";
 }
+body .etablissement {
+  font-family: "shrikhand";
+}
 body p {
   font-weight: 400;
 }
@@ -43,6 +46,21 @@ body ul {
 body ul li {
   margin: 5px;
 }
+body .coeur {
+  margin-right: 10px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body .coeur__0 {
+  position: relative;
+  z-index: 1;
+  right: -41px;
+  color: #1f1f1f;
+}
+body .coeur__1 {
+  color: #9356dc;
+}
 
 .btn {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -54,13 +72,6 @@ body ul li {
   font-size: medium;
   margin-bottom: 55px;
   margin-top: 25px;
-}
-
-.coeur {
-  background-color: white;
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 
 header button {
@@ -153,6 +164,16 @@ header button {
 }
 header {
   height: 50px;
+}
+@media (min-width: 1024px) {
+  header {
+    height: auto;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header {
+    height: auto;
+  }
 }
 header h1 {
   text-align: center;
@@ -374,8 +395,11 @@ img {
   font-size: small;
 }
 
-.coeur__1 {
-  color: #9356dc;
+.coeur {
+  background-color: white;
+}
+.coeur__0 {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

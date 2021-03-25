@@ -1,0 +1,13 @@
+.principal{
+    border-radius: 30px;
+    background-color: $color-fond;
+    position: relative;
+    top:-60px;
+    &__titre{
+       @include flex-row-btw;
+        align-items: flex-end;
+      
+    }
+
+}
+

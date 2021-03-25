@@ -5,6 +5,10 @@ img{
 .ul__icone{
     font-size: small;
 }
-.coeur__1{
-    color: $color-primary;
+.coeur{
+    background-color: white;
+   
+    &__0{
+        background-color: white;
+    }
 }
