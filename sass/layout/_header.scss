@@ -1,0 +1,11 @@
+
+header{
+    h1 {
+        text-align: center;
+        margin: 15px;
+        img{
+        @include logo;
+
+        }
+    }
+}

@@ -161,7 +161,63 @@ body footer h4 {
   }
 }
 header h1 {
+  text-align: center;
   margin: 15px;
+}
+header h1 img {
+  width: 150px;
+  height: 25px;
+}
+
+#restaurant {
+  background-color: #f6f6f6;
+  padding-top: 10px;
+}
+#restaurant .restau {
+  padding-bottom: 70px;
+}
+#restaurant .restau__prev figure {
+  border-radius: 22px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  overflow: hidden;
+  background-color: white;
+  margin: 20px 10px 10px 10px;
+  width: 340px;
+  height: 240px;
+  position: relative;
+}
+#restaurant .restau__prev figure .new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 6px 10px 6px 10px;
+  font-size: smaller;
+  font-weight: bold;
+}
+#restaurant .restau__prev--txt {
+  display: flex;
+  justify-content: space-between;
+}
+#restaurant .restau__prev--txt a div {
+  margin: 8px 0px 0px 10px;
+}
+#restaurant .restau__prev--txt a div h3 {
+  margin: 0px;
+}
+#restaurant .restau__prev--txt a div p {
+  margin: 5px 0px 0px 0px;
+}
+#restaurant .restau__prev--txt .coeur {
+  margin-right: 10px;
+}
+#restaurant .restau__prev--txt .coeur__0 {
+  position: relative;
+  z-index: 1;
+  right: -41px;
+  color: #1f1f1f;
+  background-color: white;
 }
 
 .presentation {
@@ -228,65 +284,6 @@ header h1 {
   font-size: x-large;
   position: relative;
   right: 15px;
-}
-
-#restaurant {
-  background-color: #f6f6f6;
-  padding-top: 10px;
-}
-#restaurant .restau {
-  padding-bottom: 70px;
-}
-#restaurant .restau__prev figure {
-  border-radius: 22px;
-  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
-  overflow: hidden;
-  background-color: white;
-  margin: 20px 10px 10px 10px;
-  width: 340px;
-  height: 240px;
-  position: relative;
-}
-#restaurant .restau__prev figure .new {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #99e2d0;
-  color: #008766;
-  padding: 6px 10px 6px 10px;
-  font-size: smaller;
-  font-weight: bold;
-}
-#restaurant .restau__prev--txt {
-  display: flex;
-  justify-content: space-between;
-}
-#restaurant .restau__prev--txt a div {
-  margin: 8px 0px 0px 10px;
-}
-#restaurant .restau__prev--txt a div h3 {
-  margin: 0px;
-}
-#restaurant .restau__prev--txt a div p {
-  margin: 5px 0px 0px 0px;
-}
-#restaurant .restau__prev--txt .coeur {
-  margin-right: 10px;
-}
-#restaurant .restau__prev--txt .coeur__0 {
-  position: relative;
-  z-index: 1;
-  right: -41px;
-  color: #1f1f1f;
-  background-color: white;
-}
-
-header h1 {
-  text-align: center;
-}
-header h1 img {
-  width: 150px;
-  height: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
