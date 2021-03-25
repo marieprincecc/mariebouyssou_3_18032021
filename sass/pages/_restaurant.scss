@@ -14,14 +14,10 @@
         align-items: center;
         flex-direction: column;
         @include media-tab{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+           @include flex-row-w-sa;
         }
         @include media-lg{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            @include flex-row-w-sa;
             margin-top: 40px;
         } 
         &__prev{
@@ -45,7 +41,7 @@
                 }
             }
             &--txt{
-                @include flex-row;
+                @include flex-row-btw;
                 a{
                     div{
                         margin: 8px 0px 0px 10px;

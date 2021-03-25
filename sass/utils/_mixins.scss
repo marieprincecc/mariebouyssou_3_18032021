@@ -20,7 +20,7 @@
     justify-content: space-around;
     text-align: center;
 }
-@mixin flex-row {
+@mixin flex-row-btw {
     display: flex;
     justify-content: space-between;
       
@@ -37,4 +37,11 @@
 }
 @mixin fond {
     background-color: $color-fond;    
+}
+@mixin flex-row-w-sa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }

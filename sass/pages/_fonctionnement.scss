@@ -6,9 +6,7 @@
 .fonction{
         @include flex-column;
         @include media-tab{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            @include flex-row-w-sa;
         }
         &__opt{
             display: flex;

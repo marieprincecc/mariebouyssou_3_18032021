@@ -208,6 +208,7 @@ footer h4 {
 }
 @media (max-width: 1023px) and (min-width: 740px) {
   #restaurant .restau {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -215,6 +216,7 @@ footer h4 {
 }
 @media (min-width: 1024px) {
   #restaurant .restau {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -320,6 +322,7 @@ footer h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 #fonctionnement .fonction__opt {
