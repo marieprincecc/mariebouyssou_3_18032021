@@ -1,4 +1,6 @@
 footer{
+    color:white;
+    background-color:$color-sombre;
     padding: 10px;
     @include media-lg{
         width: 30%;

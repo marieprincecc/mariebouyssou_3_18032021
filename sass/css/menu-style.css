@@ -16,10 +16,6 @@ body .presentation__txt--p {
   font-weight: 300;
   font-size: large;
 }
-body footer {
-  color: white;
-  background-color: #353535;
-}
 body footer h4 {
   font-family: "shrikhand";
   font-weight: normal;
@@ -77,6 +73,7 @@ header button {
   font-size: x-large;
   position: relative;
   bottom: 50px;
+  color: #353535;
 }
 
 .loader {
@@ -183,6 +180,8 @@ header h1 img {
 }
 
 footer {
+  color: white;
+  background-color: #353535;
   padding: 10px;
 }
 @media (min-width: 1024px) {
