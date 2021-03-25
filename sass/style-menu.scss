@@ -1,2 +1,12 @@
-@import "./base/polices";
-@import "./utils/variables;"
+@import "./base/polices" ;
+@import "./utils/variables" ;
+@import "./base/normes";
+@import "./base/norme-menu";
+@import "./utils/mixins";
+@import "./components/boutons";
+@import "./utils/listes";
+@import "./utils/animation";
+@import "./utils/keyframe";
+@import "./utils/media";
+@import "./layout/header";
+@import "./layout/footer";

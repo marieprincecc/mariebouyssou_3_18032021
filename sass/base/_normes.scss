@@ -1,10 +1,6 @@
 body{z-index: 1;
 margin: 0%;
     img{
-        width: 350px;
-        height: 160px;
-       
-       
         object-fit: cover;
     }
     h2{
@@ -17,16 +13,12 @@ margin: 0%;
     ul{
     list-style-type: none;
     padding-left: 10px;
-        .ul__icone{
-            font-size: small;
-        }
+        
         li{
             margin: 5px;
         }
     }
-    .coeur__1{
-        color: $color-primary;
-    }
+    
     
 
 }

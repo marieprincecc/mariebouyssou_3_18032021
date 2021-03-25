@@ -67,6 +67,14 @@ body ul li {
   border: none;
 }
 
+header button {
+  border: none;
+  background-color: white;
+  font-size: x-large;
+  position: relative;
+  bottom: 50px;
+}
+
 .loader {
   z-index: -1;
   position: fixed;
@@ -145,6 +153,9 @@ body ul li {
     z-index: 3;
     opacity: 0;
   }
+}
+header {
+  height: 50px;
 }
 header h1 {
   text-align: center;
@@ -368,4 +379,4 @@ img {
   color: #9356dc;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
