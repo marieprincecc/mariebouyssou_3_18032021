@@ -1,7 +1,15 @@
 #fonctionnement{
     padding-bottom: 70px;
+    @include media-lg{
+        width: 35%;
+    } 
 .fonction{
         @include flex-column;
+        @include media-tab{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         &__opt{
             display: flex;
             justify-content: space-around;

@@ -1,10 +1,18 @@
 .presentation{
     @include fond;
+    @include media-lg{
+        width: 35%;
+    } 
     
         &__position{
             background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
             text-align: center;
             padding: .5px;
+            @include media-lg{
+                position: absolute;
+                right: 0px;
+                left: 0px;
+            } 
             p{
                 .marquer{
                     position: relative;
@@ -15,6 +23,9 @@
         &__txt{
             
             @include flex-column;
+            @include media-lg{
+                padding-top: 70px;
+            } 
             
         }
     }
