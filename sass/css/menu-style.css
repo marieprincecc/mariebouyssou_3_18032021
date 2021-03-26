@@ -94,15 +94,6 @@ main .coeur__0 {
   align-self: center;
 }
 
-header button {
-  border: none;
-  background-color: white;
-  font-size: x-large;
-  position: relative;
-  bottom: 50px;
-  color: #353535;
-}
-
 .loader {
   z-index: -1;
   position: fixed;
@@ -211,6 +202,14 @@ header h1 img {
     width: 500px;
     height: 85px;
   }
+}
+header a {
+  border: none;
+  background-color: white;
+  font-size: x-large;
+  position: relative;
+  bottom: 50px;
+  color: #353535;
 }
 
 footer {
