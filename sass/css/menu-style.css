@@ -90,6 +90,8 @@ main .coeur__0 {
   font-size: medium;
   margin-bottom: 25px;
   margin-top: 25px;
+  width: 220px;
+  align-self: center;
 }
 
 header button {
@@ -281,9 +283,6 @@ footer h4 {
 }
 .principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
   margin-top: 50px;
-}
-.principal .btn {
-  width: 200px;
 }
 
 /*# sourceMappingURL=menu-style.css.map */
