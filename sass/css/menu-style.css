@@ -70,6 +70,7 @@ main {
 }
 main img {
   width: 450px;
+  height: 350px;
 }
 main .coeur {
   background-color: #f6f6f6;
