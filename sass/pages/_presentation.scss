@@ -23,8 +23,10 @@
         &__txt{
             
             @include flex-column;
+            padding-bottom: 30px;
             @include media-lg{
                 padding-top: 70px;
+                
             } 
             
         }

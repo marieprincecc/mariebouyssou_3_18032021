@@ -73,7 +73,7 @@ body :focus {
   border: none;
   color: white;
   font-size: medium;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   margin-top: 25px;
 }
 
@@ -319,6 +319,7 @@ footer h4 {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  padding-bottom: 30px;
 }
 @media (min-width: 1024px) {
   .presentation__txt {
