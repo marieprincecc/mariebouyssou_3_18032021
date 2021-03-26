@@ -61,6 +61,9 @@ body .coeur__0 {
 body .coeur__1 {
   color: #9356dc;
 }
+body :focus {
+  outline: none;
+}
 
 .btn {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -114,9 +117,6 @@ header button {
   color: #cbb35e;
 }
 
-.coeur:focus {
-  outline: none;
-}
 .coeur:focus > .coeur__0 {
   opacity: 0;
   transition: 688ms;

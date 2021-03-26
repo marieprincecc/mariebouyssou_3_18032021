@@ -61,17 +61,21 @@ body .coeur__0 {
 body .coeur__1 {
   color: #9356dc;
 }
+body :focus {
+  outline: none;
+}
 
-img {
+main {
+  background-color: #f6f6f6;
+}
+main img {
   width: 450px;
 }
-
-.coeur {
+main .coeur {
   background-color: #f6f6f6;
   position: relative;
-  right: 20px;
 }
-.coeur__0 {
+main .coeur__0 {
   background-color: #f6f6f6;
 }
 
@@ -127,12 +131,9 @@ header button {
   color: #cbb35e;
 }
 
-.coeur:focus {
-  outline: none;
-}
 .coeur:focus > .coeur__0 {
   opacity: 0;
-  transition: 350ms;
+  transition: 688ms;
 }
 
 @keyframes rotation-cookie {
@@ -178,6 +179,16 @@ header button {
 header {
   height: 50px;
 }
+@media (min-width: 1024px) {
+  header {
+    height: auto;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header {
+    height: auto;
+  }
+}
 header h1 {
   text-align: center;
   margin: 15px;
@@ -218,11 +229,60 @@ footer h4 {
   background-color: #f6f6f6;
   position: relative;
   top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .principal__titre {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.principal .etablissement__menu h3 {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: larger;
+}
+.principal .etablissement__menu span {
+  margin-left: 10px;
+  display: block;
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
+}
+.principal .etablissement__menu h4 {
+  font-size: larger;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.principal .etablissement__menu .prix {
+  font-weight: 600;
+}
+.principal .etablissement__menu ul {
+  margin-left: 0px;
+}
+.principal .etablissement__menu ul li {
+  background-color: white;
+  border-radius: 22px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 0px 8px;
+  margin-bottom: 15px;
+}
+.principal .etablissement__menu ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+.principal .etablissement__menu ul li div p {
+  margin-top: 8px;
+}
+.principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
+  margin-top: 50px;
+}
+.principal .btn {
+  width: 200px;
 }
 
 /*# sourceMappingURL=menu-style.css.map */

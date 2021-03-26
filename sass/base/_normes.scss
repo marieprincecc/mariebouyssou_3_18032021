@@ -35,5 +35,7 @@ margin: 0%;
             color: $color-primary;
         }
         }
-
+:focus{
+    outline: none;
+}
 }
