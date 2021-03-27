@@ -160,7 +160,7 @@ header {
 }
 @media (min-width: 1024px) {
   header {
-    height: auto;
+    height: 100px;
   }
 }
 @media (max-width: 1023px) and (min-width: 740px) {
@@ -201,11 +201,6 @@ footer {
   color: white;
   background-color: #353535;
   padding: 10px;
-}
-@media (min-width: 1024px) {
-  footer {
-    width: 30%;
-  }
 }
 footer h4 {
   margin: 0px 0px 10px 0px;

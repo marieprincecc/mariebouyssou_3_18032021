@@ -2,7 +2,7 @@
 header{
     height: 50px;
     @include media-lg{
-        height: auto;
+        height: 100px;
     }
     @include media-tab{
         height: auto;

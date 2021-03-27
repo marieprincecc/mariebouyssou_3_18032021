@@ -1,8 +1,8 @@
+@import "./utils/mixins";
 @import "./base/polices" ;
 @import "./utils/variables" ;
 @import "./base/normes";
 @import "./base/norme-menu";
-@import "./utils/mixins";
 @import "./components/boutons";
 @import "./utils/listes";
 @import "./utils/animation";
@@ -11,3 +11,51 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./pages/menu";
+
+header{
+    a{
+        @include media-lg{
+            left: 30px;
+            bottom: 80px;
+            font-size: xx-large;
+        }
+    }
+}
+main{
+    
+.heading{
+    @include media-lg{
+        width: 2000px;
+    }
+}
+.coeur{
+    @include media-lg{
+    right: 30px;
+}
+}
+.principal{
+    @include media-lg{
+        align-items: initial;
+    }
+.etablissement__menu{
+    @include media-lg{
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    &--entrée{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    &--plat{
+        grid-column-start: 2;
+        margin-top: 0px;
+    }
+    &--dessert{
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+}
+}
+}

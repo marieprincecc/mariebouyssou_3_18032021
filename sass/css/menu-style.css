@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 body {
@@ -176,7 +177,7 @@ header {
 }
 @media (min-width: 1024px) {
   header {
-    height: auto;
+    height: 100px;
   }
 }
 @media (max-width: 1023px) and (min-width: 740px) {
@@ -217,11 +218,6 @@ footer {
   color: white;
   background-color: #353535;
   padding: 10px;
-}
-@media (min-width: 1024px) {
-  footer {
-    width: 30%;
-  }
 }
 footer h4 {
   margin: 0px 0px 10px 0px;
@@ -283,6 +279,50 @@ footer h4 {
 }
 .principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
   margin-top: 50px;
+}
+
+@media (min-width: 1024px) {
+  header a {
+    left: 30px;
+    bottom: 80px;
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .heading {
+    width: 2000px;
+  }
+}
+@media (min-width: 1024px) {
+  main .coeur {
+    right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  main .principal {
+    align-items: initial;
+  }
+}
+@media (min-width: 1024px) {
+  main .principal .etablissement__menu {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  main .principal .etablissement__menu--entrée {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  main .principal .etablissement__menu--plat {
+    grid-column-start: 2;
+    margin-top: 0px;
+  }
+  main .principal .etablissement__menu--dessert {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 /*# sourceMappingURL=menu-style.css.map */
