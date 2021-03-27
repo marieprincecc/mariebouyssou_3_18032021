@@ -213,10 +213,11 @@ footer h4 {
 @media (min-width: 1024px) {
   #restaurant {
     position: absolute;
-    right: 0px;
-    top: 178px;
+    right: 30px;
+    top: 170px;
     background-color: white;
     width: 65%;
+    padding-top: 0px;
   }
 }
 #restaurant .restau {
