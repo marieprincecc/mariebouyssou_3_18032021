@@ -71,6 +71,7 @@ main {
 main img {
   width: 450px;
   height: 350px;
+  max-width: 100%;
 }
 main .coeur {
   background-color: #f6f6f6;

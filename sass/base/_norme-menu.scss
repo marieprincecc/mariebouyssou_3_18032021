@@ -2,7 +2,9 @@ main{
     background-color: $color-fond;
     img{
         width: 450px;
-    height: 350px;}
+        height: 350px;
+        max-width: 100%;
+    }
         .coeur{
          background-color:$color-fond;
          position: relative;
