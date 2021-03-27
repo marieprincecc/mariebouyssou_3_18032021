@@ -20,6 +20,9 @@ header{
             bottom: 80px;
             font-size: xx-large;
         }
+        @include media-tab{
+            bottom: 60px;
+        }
     }
 }
 main{

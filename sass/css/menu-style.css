@@ -289,6 +289,11 @@ footer h4 {
     font-size: xx-large;
   }
 }
+@media (max-width: 1023px) and (min-width: 740px) {
+  header a {
+    bottom: 60px;
+  }
+}
 
 @media (min-width: 1024px) {
   main .heading {
