@@ -182,7 +182,8 @@ header {
 }
 @media (max-width: 1023px) and (min-width: 740px) {
   header {
-    height: auto;
+    height: 80px;
+    padding-top: 10px;
   }
 }
 header h1 {
@@ -294,6 +295,12 @@ footer h4 {
     width: 2000px;
   }
 }
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .heading {
+    width: 1023px;
+    height: 300px;
+  }
+}
 @media (min-width: 1024px) {
   main .coeur {
     right: 30px;
@@ -302,6 +309,16 @@ footer h4 {
 @media (min-width: 1024px) {
   main .principal {
     align-items: initial;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .principal h2 {
+    font-size: xx-large;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .principal .etablissement__menu {
+    width: 80%;
   }
 }
 @media (min-width: 1024px) {

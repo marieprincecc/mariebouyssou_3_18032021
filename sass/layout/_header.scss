@@ -5,7 +5,8 @@ header{
         height: 100px;
     }
     @include media-tab{
-        height: auto;
+        height: 80px;
+        padding-top: 10px;
     }
     h1 {
         text-align: center;

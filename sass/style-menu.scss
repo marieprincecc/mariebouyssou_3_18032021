@@ -13,6 +13,7 @@
 @import "./pages/menu";
 
 header{
+    
     a{
         @include media-lg{
             left: 30px;
@@ -27,6 +28,10 @@ main{
     @include media-lg{
         width: 2000px;
     }
+    @include media-tab{
+        width:$tab-max;
+        height: 300px;
+    }
 }
 .coeur{
     @include media-lg{
@@ -37,7 +42,15 @@ main{
     @include media-lg{
         align-items: initial;
     }
+    h2{
+        @include media-tab{
+            font-size: xx-large;
+        }
+    }
 .etablissement__menu{
+    @include media-tab{
+        width: 80%;
+    }
     @include media-lg{
     display: grid;
     grid-column: 2;

@@ -8,3 +8,8 @@ img{
 .coeur__1{
     color: $color-primary;
 }
+footer{
+    @include media-lg{
+        width: 30%;
+}
+}

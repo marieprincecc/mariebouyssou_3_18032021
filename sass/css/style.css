@@ -165,7 +165,8 @@ header {
 }
 @media (max-width: 1023px) and (min-width: 740px) {
   header {
-    height: auto;
+    height: 80px;
+    padding-top: 10px;
   }
 }
 header h1 {
@@ -353,6 +354,11 @@ footer h4 {
   display: flex;
   justify-content: space-around;
 }
+@media (min-width: 1024px) {
+  #fonctionnement .fonction__opt {
+    margin-left: 10px;
+  }
+}
 #fonctionnement .fonction__opt p {
   border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
@@ -401,6 +407,25 @@ img {
 }
 .coeur__0 {
   background-color: white;
+}
+
+img {
+  width: 350px;
+  height: 160px;
+}
+
+.ul__icone {
+  font-size: small;
+}
+
+.coeur__1 {
+  color: #9356dc;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
