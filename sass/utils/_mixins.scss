@@ -2,6 +2,10 @@
     background-image: linear-gradient($color-secondary, $color-primary);
     
 }
+@mixin degrade-clr {
+    background-image: linear-gradient(lighten($color-secondary,5%), lighten($color-primary,5%));
+    
+}
 @mixin logo {
     width: 150px;
     height: 25px;

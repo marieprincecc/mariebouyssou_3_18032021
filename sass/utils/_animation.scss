@@ -2,7 +2,8 @@
    .loader{
      z-index: -1;
      
-     position: fixed;
+     position: absolute;
+     top:0px;
      height: 100%;
      width: 100%;
      background-color: $color-fond;
@@ -31,7 +32,7 @@
         color:#cbb35e;
       }
    }
-   
+  
   
      
    
