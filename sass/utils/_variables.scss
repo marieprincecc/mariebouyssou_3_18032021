@@ -6,3 +6,6 @@ $color-sombre:#353535;
 $tab-min:740px;
 $tab-max:1023px;
 $screen-lg:1024px;
+$color-primary-clr: lighten($color-primary,10%);
+$color-ombre:rgba(130,130,130,0.88);
+$ombre-dark:darken($color-ombre,20%);

@@ -46,6 +46,12 @@
   
      } 
    }
+   .btn::after{
+     transition: opacity 250ms;
+   }
+   .btn:hover::after{
+     opacity: 1;
+   }
  
   
     
