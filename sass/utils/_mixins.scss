@@ -56,4 +56,7 @@
     justify-content: space-around;
     
 }
+@mixin trans-origine {
+    transform-origin: top;
+}
 

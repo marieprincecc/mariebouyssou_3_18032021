@@ -156,6 +156,48 @@ main .coeur__0 {
   opacity: 1;
 }
 
+.etablissement__menu--entree li {
+  animation: menu 300ms 300ms both;
+  transform-origin: top;
+}
+.etablissement__menu--entree li.entree--1 {
+  animation-delay: 150ms;
+}
+.etablissement__menu--entree li.entree--2 {
+  animation-delay: 300ms;
+}
+.etablissement__menu--entree li.entree--3 {
+  animation-delay: 450ms;
+}
+
+.etablissement__menu--plat li {
+  animation: menu 900ms 300ms both;
+  transform-origin: top;
+}
+.etablissement__menu--plat li.plat--1 {
+  animation-delay: 150ms;
+}
+.etablissement__menu--plat li.plat--2 {
+  animation-delay: 300ms;
+}
+.etablissement__menu--plat li.plat--3 {
+  animation-delay: 450ms;
+}
+
+.etablissement__menu--dessert li {
+  animation: menu 600ms 1500ms both;
+  transform-origin: top;
+}
+.etablissement__menu--dessert li.dessert--1 {
+  animation-delay: 150ms;
+}
+.etablissement__menu--dessert li.dessert--2 {
+  animation-delay: 300ms;
+}
+.etablissement__menu--dessert li.dessert--3 {
+  animation-delay: 450ms;
+}
+
 @keyframes rotation-cookie {
   from {
     transform: rotate(0deg);
@@ -194,6 +236,14 @@ main .coeur__0 {
   100% {
     z-index: 3;
     opacity: 0;
+  }
+}
+@keyframes menu {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
   }
 }
 header {
@@ -294,6 +344,7 @@ footer h4 {
   flex-direction: column;
   padding: 0px 10px 0px 8px;
   margin-bottom: 15px;
+  transform: scaleY(0);
 }
 .principal .etablissement__menu ul li div {
   display: flex;
