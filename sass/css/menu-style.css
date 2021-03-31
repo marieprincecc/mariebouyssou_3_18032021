@@ -156,46 +156,27 @@ main .coeur__0 {
   opacity: 1;
 }
 
-.etablissement__menu--entree li {
-  animation: menu 300ms 300ms both;
+.etablissement__menu li {
+  animation: menu 600ms 300ms both;
   transform-origin: top;
 }
-.etablissement__menu--entree li.entree--1 {
+.etablissement__menu li.choix--1 {
   animation-delay: 150ms;
 }
-.etablissement__menu--entree li.entree--2 {
+.etablissement__menu li.choix--2 {
   animation-delay: 300ms;
 }
-.etablissement__menu--entree li.entree--3 {
+.etablissement__menu li.choix--3 {
   animation-delay: 450ms;
 }
-
-.etablissement__menu--plat li {
-  animation: menu 900ms 300ms both;
-  transform-origin: top;
+.etablissement__menu li.choix--4 {
+  animation-delay: 600ms;
 }
-.etablissement__menu--plat li.plat--1 {
-  animation-delay: 150ms;
+.etablissement__menu li.choix--5 {
+  animation-delay: 750ms;
 }
-.etablissement__menu--plat li.plat--2 {
-  animation-delay: 300ms;
-}
-.etablissement__menu--plat li.plat--3 {
-  animation-delay: 450ms;
-}
-
-.etablissement__menu--dessert li {
-  animation: menu 600ms 1500ms both;
-  transform-origin: top;
-}
-.etablissement__menu--dessert li.dessert--1 {
-  animation-delay: 150ms;
-}
-.etablissement__menu--dessert li.dessert--2 {
-  animation-delay: 300ms;
-}
-.etablissement__menu--dessert li.dessert--3 {
-  animation-delay: 450ms;
+.etablissement__menu li.choix--6 {
+  animation-delay: 900ms;
 }
 
 @keyframes rotation-cookie {

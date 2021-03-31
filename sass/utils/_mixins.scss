@@ -56,7 +56,10 @@
     justify-content: space-around;
     
 }
-@mixin trans-origine {
+
+@mixin animation-menu {
+    animation:menu 600ms 300ms both;
     transform-origin: top;
+    
 }
 

@@ -52,38 +52,17 @@
    .btn:hover::after{
      opacity: 1;
    }
-   .etablissement__menu--entree{
+   .etablissement__menu{
    li {
-     animation:menu 300ms 300ms both;
-     @include trans-origine;
-     @for $i from 1 through 3 {
-      &.entree--#{$i} {
+     @include animation-menu;
+     @for $i from 1 through 6 {
+      &.choix--#{$i} {
           animation-delay: 150ms * $i;
        }
    }
   }
 }
-.etablissement__menu--plat{
-  li {
-  animation:menu 900ms 300ms both;
-  @include trans-origine;
-  @for $i from 1 through 3 {
-   &.plat--#{$i} {
-       animation-delay: 150ms * $i;
-    }
-}
-}}
-.etablissement__menu--dessert{
-  li {
-    animation:menu 600ms 1500ms both;
-    @include trans-origine;
-    @for $i from 1 through 3 {
-     &.dessert--#{$i} {
-         animation-delay: 150ms * $i;
-      }
-  }
- }
-}
+
  
   
     
