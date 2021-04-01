@@ -58,7 +58,7 @@
 }
 
 @mixin animation-menu {
-    animation:menu 600ms 300ms both;
+    animation:anim-opacity 850ms 300ms reverse both;
     transform-origin: top;
     
 }

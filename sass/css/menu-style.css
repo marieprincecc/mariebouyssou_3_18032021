@@ -157,7 +157,7 @@ main .coeur__0 {
 }
 
 .etablissement__menu li {
-  animation: menu 600ms 300ms both;
+  animation: anim-opacity 850ms 300ms reverse both;
   transform-origin: top;
 }
 .etablissement__menu li.choix--1 {
@@ -325,7 +325,7 @@ footer h4 {
   flex-direction: column;
   padding: 0px 10px 0px 8px;
   margin-bottom: 15px;
-  transform: scaleY(0);
+  opacity: 0;
 }
 .principal .etablissement__menu ul li div {
   display: flex;
