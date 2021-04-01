@@ -139,6 +139,29 @@ body :focus {
   opacity: 1;
 }
 
+.etablissement__menu li {
+  animation: menu 600ms 300ms both;
+  transform-origin: top;
+}
+.etablissement__menu li.choix--1 {
+  animation-delay: 150ms;
+}
+.etablissement__menu li.choix--2 {
+  animation-delay: 300ms;
+}
+.etablissement__menu li.choix--3 {
+  animation-delay: 450ms;
+}
+.etablissement__menu li.choix--4 {
+  animation-delay: 600ms;
+}
+.etablissement__menu li.choix--5 {
+  animation-delay: 750ms;
+}
+.etablissement__menu li.choix--6 {
+  animation-delay: 900ms;
+}
+
 @keyframes rotation-cookie {
   from {
     transform: rotate(0deg);
@@ -177,6 +200,14 @@ body :focus {
   100% {
     z-index: 3;
     opacity: 0;
+  }
+}
+@keyframes menu {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
   }
 }
 header {
