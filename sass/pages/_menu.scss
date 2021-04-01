@@ -1,12 +1,13 @@
 .principal{
     border-radius: 30px;
-    background-color: $color-fond;
     position: relative;
     top:-60px;
    display: flex;
    flex-direction: column;
    align-items: center;
-  
+     @include media-lg{
+        align-items: initial;
+    }
    
     &__titre{
        @include flex-row-btw;
@@ -52,6 +53,27 @@
             }
         }
     }
+    
+        @include media-tab{
+            width: 80%;
+        }
+        @include media-lg{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+        &--entrée{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        &--plat{
+            grid-column-start: 2;
+            margin-top: 0px;
+        }
+        &--dessert{
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
     &--plat, &--dessert{
         margin-top: 50px;
     }
@@ -60,3 +82,4 @@
 
 }
 
+}

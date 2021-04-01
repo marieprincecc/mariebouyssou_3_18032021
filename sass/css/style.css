@@ -48,14 +48,8 @@ body ul li {
 }
 body .coeur {
   margin-right: 10px;
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 body .coeur__0 {
-  position: relative;
-  z-index: 1;
-  right: -41px;
   color: #1f1f1f;
 }
 body .coeur__1 {
@@ -94,36 +88,34 @@ body :focus {
   opacity: 0;
 }
 
+.coeur {
+  margin-right: 10px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.coeur__0 {
+  position: relative;
+  z-index: 1;
+  right: -41px;
+}
+
 .loader {
-  z-index: -1;
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: #f6f6f6;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: loader 2967.04ms;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.28, 0.89, 0, 1.08);
 }
 .loader .cookie {
-  animation: rotation-cookie;
+  animation: rotation;
   animation-duration: 900ms;
   animation-delay: 1000ms;
   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
-  font-size: 250%;
-  color: #cbb35e;
 }
 .loader .cook {
   animation: anim-opacity;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
-  font-size: 250%;
-  color: #cbb35e;
 }
 
 .coeur:focus > .coeur__0 {
@@ -140,7 +132,7 @@ body :focus {
 }
 
 .etablissement__menu li {
-  animation: menu 600ms 300ms both;
+  animation: anim-opacity 850ms 300ms reverse both;
   transform-origin: top;
 }
 .etablissement__menu li.choix--1 {
@@ -162,7 +154,7 @@ body :focus {
   animation-delay: 900ms;
 }
 
-@keyframes rotation-cookie {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -245,12 +237,23 @@ header h1 img {
   }
 }
 header a {
-  border: none;
   background-color: white;
   font-size: x-large;
   position: relative;
   bottom: 50px;
   color: #353535;
+}
+@media (min-width: 1024px) {
+  header a {
+    left: 30px;
+    bottom: 80px;
+    font-size: xx-large;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header a {
+    bottom: 60px;
+  }
 }
 
 footer {
@@ -260,6 +263,9 @@ footer {
 }
 footer h4 {
   margin: 0px 0px 10px 0px;
+}
+footer .ul__icone {
+  font-size: small;
 }
 
 #restaurant {
@@ -303,21 +309,12 @@ footer h4 {
   border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   overflow: hidden;
-  background-color: white;
   margin: 20px 10px 10px 10px;
-  width: 340px;
-  height: 240px;
   position: relative;
 }
 #restaurant .restau__prev figure .new {
-  position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #99e2d0;
-  color: #008766;
-  padding: 6px 10px 6px 10px;
-  font-size: smaller;
-  font-weight: bold;
 }
 #restaurant .restau__prev--txt {
   display: flex;
@@ -331,16 +328,6 @@ footer h4 {
 }
 #restaurant .restau__prev--txt a div p {
   margin: 5px 0px 0px 0px;
-}
-#restaurant .restau__prev--txt .coeur {
-  margin-right: 10px;
-}
-#restaurant .restau__prev--txt .coeur__0 {
-  position: relative;
-  z-index: 1;
-  right: -41px;
-  color: #1f1f1f;
-  background-color: white;
 }
 
 .presentation {
@@ -420,7 +407,6 @@ footer h4 {
   background-color: #f6f6f6;
   padding: 20px;
   font-size: medium;
-  padding: 20px;
   width: 260px;
   margin-bottom: 8px;
 }
@@ -453,10 +439,6 @@ img {
   height: 160px;
 }
 
-.ul__icone {
-  font-size: small;
-}
-
 .coeur {
   background-color: white;
 }
@@ -464,23 +446,46 @@ img {
   background-color: white;
 }
 
-img {
-  width: 350px;
-  height: 160px;
+figure {
+  background-color: white;
+  width: 340px;
+  height: 240px;
 }
-
-.ul__icone {
-  font-size: small;
-}
-
-.coeur__1 {
-  color: #9356dc;
+figure .new {
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: smaller;
+  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
   footer {
     width: 30%;
   }
+}
+
+.new {
+  position: absolute;
+  padding: 6px 10px 6px 10px;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.loader {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .cookie, .loader .cook {
+  font-size: 250%;
+  color: #cbb35e;
 }
 
 /*# sourceMappingURL=style.css.map */

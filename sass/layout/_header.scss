@@ -17,11 +17,21 @@ header{
         }
     }
         a{
-            border: none;
+            
             background-color: white;
             font-size: x-large;
             position: relative;
             bottom: 50px;
             color: $color-sombre;
+        }
+        a{
+            @include media-lg{
+                left: 30px;
+                bottom: 80px;
+                font-size: xx-large;
+            }
+            @include media-tab{
+                bottom: 60px;
+            }
         }
 }

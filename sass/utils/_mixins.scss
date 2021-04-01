@@ -26,6 +26,10 @@
         height: 85px;
     }
     }
+    @mixin cookie{
+        font-size: $size-cookie;
+        color: $color-cookie;
+    }
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -62,4 +66,20 @@
     transform-origin: top;
     
 }
-
+@mixin anim-loader {
+    animation: loader 2967.04ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(.28,.89,0,1.08);
+}
+@mixin anim-cookie {
+    animation: rotation;
+         animation-duration:900ms;
+         animation-delay:1000ms;
+         animation-iteration-count:2;
+         animation-timing-function:ease-in-out;
+}
+@mixin anim-cook {
+        animation:anim-opacity;
+        animation-duration:600ms;
+        animation-fill-mode:forwards;
+}

@@ -49,14 +49,8 @@ body ul li {
 }
 body .coeur {
   margin-right: 10px;
-  padding: 0;
-  margin: 0;
-  border: none;
 }
 body .coeur__0 {
-  position: relative;
-  z-index: 1;
-  right: -41px;
   color: #1f1f1f;
 }
 body .coeur__1 {
@@ -69,16 +63,40 @@ body :focus {
 main {
   background-color: #f6f6f6;
 }
-main img {
+main .heading {
   width: 450px;
   height: 350px;
   max-width: 100%;
 }
-main .coeur {
+@media (min-width: 1024px) {
+  main .heading {
+    width: 2000px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .heading {
+    width: 1023px;
+    height: 300px;
+  }
+}
+main .principal {
+  background-color: #f6f6f6;
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .principal h2 {
+    font-size: xx-large;
+  }
+}
+main .principal .coeur {
   background-color: #f6f6f6;
   position: relative;
 }
-main .coeur__0 {
+@media (min-width: 1024px) {
+  main .principal .coeur {
+    right: 30px;
+  }
+}
+main .principal .coeur__0 {
   background-color: #f6f6f6;
 }
 
@@ -111,36 +129,34 @@ main .coeur__0 {
   opacity: 0;
 }
 
+.coeur {
+  margin-right: 10px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.coeur__0 {
+  position: relative;
+  z-index: 1;
+  right: -41px;
+}
+
 .loader {
-  z-index: -1;
-  position: absolute;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: #f6f6f6;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   animation: loader 2967.04ms;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.28, 0.89, 0, 1.08);
 }
 .loader .cookie {
-  animation: rotation-cookie;
+  animation: rotation;
   animation-duration: 900ms;
   animation-delay: 1000ms;
   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
-  font-size: 250%;
-  color: #cbb35e;
 }
 .loader .cook {
   animation: anim-opacity;
   animation-duration: 600ms;
   animation-fill-mode: forwards;
-  font-size: 250%;
-  color: #cbb35e;
 }
 
 .coeur:focus > .coeur__0 {
@@ -179,7 +195,7 @@ main .coeur__0 {
   animation-delay: 900ms;
 }
 
-@keyframes rotation-cookie {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
@@ -262,12 +278,23 @@ header h1 img {
   }
 }
 header a {
-  border: none;
   background-color: white;
   font-size: x-large;
   position: relative;
   bottom: 50px;
   color: #353535;
+}
+@media (min-width: 1024px) {
+  header a {
+    left: 30px;
+    bottom: 80px;
+    font-size: xx-large;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header a {
+    bottom: 60px;
+  }
 }
 
 footer {
@@ -278,15 +305,22 @@ footer {
 footer h4 {
   margin: 0px 0px 10px 0px;
 }
+footer .ul__icone {
+  font-size: small;
+}
 
 .principal {
   border-radius: 30px;
-  background-color: #f6f6f6;
   position: relative;
   top: -60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .principal {
+    align-items: initial;
+  }
 }
 .principal__titre {
   display: flex;
@@ -334,72 +368,32 @@ footer h4 {
 .principal .etablissement__menu ul li div p {
   margin-top: 8px;
 }
-.principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
-  margin-top: 50px;
-}
-
-@media (min-width: 1024px) {
-  header a {
-    left: 30px;
-    bottom: 80px;
-    font-size: xx-large;
-  }
-}
 @media (max-width: 1023px) and (min-width: 740px) {
-  header a {
-    bottom: 60px;
-  }
-}
-
-@media (min-width: 1024px) {
-  main .heading {
-    width: 2000px;
-  }
-}
-@media (max-width: 1023px) and (min-width: 740px) {
-  main .heading {
-    width: 1023px;
-    height: 300px;
-  }
-}
-@media (min-width: 1024px) {
-  main .coeur {
-    right: 30px;
-  }
-}
-@media (min-width: 1024px) {
-  main .principal {
-    align-items: initial;
-  }
-}
-@media (max-width: 1023px) and (min-width: 740px) {
-  main .principal h2 {
-    font-size: xx-large;
-  }
-}
-@media (max-width: 1023px) and (min-width: 740px) {
-  main .principal .etablissement__menu {
+  .principal .etablissement__menu {
     width: 80%;
   }
 }
 @media (min-width: 1024px) {
-  main .principal .etablissement__menu {
+  .principal .etablissement__menu {
     display: grid;
     grid-column: 2;
     grid-row: 2;
   }
-  main .principal .etablissement__menu--entrée {
+  .principal .etablissement__menu--entrée {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  main .principal .etablissement__menu--plat {
+  .principal .etablissement__menu--plat {
     grid-column-start: 2;
     margin-top: 0px;
   }
-  main .principal .etablissement__menu--dessert {
+  .principal .etablissement__menu--dessert {
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
+    margin-top: 50px;
   }
 }
 

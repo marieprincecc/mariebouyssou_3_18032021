@@ -1,13 +1,4 @@
-img{
-    width: 350px;
-    height: 160px;
-}
-.ul__icone{
-    font-size: small;
-}
-.coeur__1{
-    color: $color-primary;
-}
+
 footer{
     @include media-lg{
         width: 30%;

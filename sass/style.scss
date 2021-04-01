@@ -3,7 +3,6 @@
 @import "./base/normes";
 @import "./utils/mixins";
 @import "./components/boutons";
-@import "./utils/listes";
 @import "./utils/animation";
 @import "./utils/keyframe";
 @import "./utils/media";
@@ -14,6 +13,8 @@
 @import "./pages/fonctionnement";
 @import "./base/normes-home";
 @import "./pages/home";
+@import"./components/sticker-new";
+@import"./pages/loader.scss";
 
 
 
