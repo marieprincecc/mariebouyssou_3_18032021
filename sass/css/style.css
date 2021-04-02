@@ -451,7 +451,7 @@ figure .new {
   }
 }
 @media (min-width: 1024px) {
-  main .presentation-fonctionnement {
+  main .information {
     display: flex;
     flex-direction: column;
   }
