@@ -1,10 +1,7 @@
 #fonctionnement{
     padding-bottom: 70px;
-    @include media-lg{
-        width: 30%;
         
-        
-    } 
+    
 .fonction{
         @include flex-column;
         @include media-tab{

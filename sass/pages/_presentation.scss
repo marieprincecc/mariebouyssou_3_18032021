@@ -1,8 +1,5 @@
 .presentation{
     @include fond;
-    @include media-lg{
-        width: 30%;
-    } 
     
         &__position{
             background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);

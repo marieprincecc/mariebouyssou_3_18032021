@@ -274,12 +274,9 @@ footer .ul__icone {
 }
 @media (min-width: 1024px) {
   #restaurant {
-    position: absolute;
-    right: 30px;
-    top: 170px;
     background-color: white;
     width: 65%;
-    padding-top: 0px;
+    padding-top: 50px;
   }
 }
 #restaurant .restau {
@@ -333,11 +330,6 @@ footer .ul__icone {
 .presentation {
   background-color: #f6f6f6;
 }
-@media (min-width: 1024px) {
-  .presentation {
-    width: 30%;
-  }
-}
 .presentation__position {
   background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
   text-align: center;
@@ -372,11 +364,6 @@ footer .ul__icone {
 
 #fonctionnement {
   padding-bottom: 70px;
-}
-@media (min-width: 1024px) {
-  #fonctionnement {
-    width: 30%;
-  }
 }
 #fonctionnement .fonction {
   display: flex;
@@ -459,8 +446,14 @@ figure .new {
 }
 
 @media (min-width: 1024px) {
-  footer {
-    width: 30%;
+  main {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  main .presentation-fonctionnement {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -1,6 +1,11 @@
-
-footer{
+main{
     @include media-lg{
-        width: 30%;
-}
+        display: flex;
+    }
+    .presentation-fonctionnement{
+        @include media-lg{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
