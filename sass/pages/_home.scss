@@ -2,7 +2,7 @@ main{
     @include media-lg{
         display: flex;
     }
-    .informationt{
+    .information{
         @include media-lg{
             display: flex;
             flex-direction: column;
