@@ -42,16 +42,20 @@
    }
   
     &:hover>.choix--coche{
-      animation:menu 300ms both;
+      animation:menu 500ms both;
+      .check{
+        animation: rotation 600ms ease-out;
+      }
     }
     &:hover>.prix{
       transform: translateX(-90px);
-      transition:  transform 300ms;
+      transition:  transform 500ms;
     } 
     &:hover> .choix--txt{
       width: 60%;
-
-    }
+      
+  }
+ 
 }}}}
 
  

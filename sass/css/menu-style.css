@@ -212,11 +212,14 @@ main .principal .etablissement__menu .choix--coche {
   animation-delay: 900ms;
 }
 .principal .etablissement__menu ul li:hover > .choix--coche {
-  animation: menu 300ms both;
+  animation: menu 500ms both;
+}
+.principal .etablissement__menu ul li:hover > .choix--coche .check {
+  animation: rotation 600ms ease-out;
 }
 .principal .etablissement__menu ul li:hover > .prix {
   transform: translateX(-90px);
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 .principal .etablissement__menu ul li:hover > .choix--txt {
   width: 60%;
