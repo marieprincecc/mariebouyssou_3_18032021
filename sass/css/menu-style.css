@@ -99,6 +99,23 @@ main .principal .coeur {
 main .principal .coeur__0 {
   background-color: #f6f6f6;
 }
+main .principal .choix--coche {
+  overflow: hidden;
+  background-color: #99e2d0;
+  color: white;
+  position: absolute;
+  transform-origin: right;
+  width: 80px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0);
+  border-radius: 0px 22px 22px 0px;
+}
 
 .btn {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -172,27 +189,37 @@ main .principal .coeur__0 {
   opacity: 1;
 }
 
-.etablissement__menu li {
+.principal .etablissement__menu ul li {
   animation: anim-opacity 850ms 300ms reverse both;
   transform-origin: top;
 }
-.etablissement__menu li.choix--1 {
+.principal .etablissement__menu ul li.choix--1 {
   animation-delay: 150ms;
 }
-.etablissement__menu li.choix--2 {
+.principal .etablissement__menu ul li.choix--2 {
   animation-delay: 300ms;
 }
-.etablissement__menu li.choix--3 {
+.principal .etablissement__menu ul li.choix--3 {
   animation-delay: 450ms;
 }
-.etablissement__menu li.choix--4 {
+.principal .etablissement__menu ul li.choix--4 {
   animation-delay: 600ms;
 }
-.etablissement__menu li.choix--5 {
+.principal .etablissement__menu ul li.choix--5 {
   animation-delay: 750ms;
 }
-.etablissement__menu li.choix--6 {
+.principal .etablissement__menu ul li.choix--6 {
   animation-delay: 900ms;
+}
+.principal .etablissement__menu ul li:hover > .choix--coche {
+  animation: menu 300ms both;
+}
+.principal .etablissement__menu ul li:hover > .prix {
+  transform: translateX(-90px);
+  transition: transform 300ms;
+}
+.principal .etablissement__menu ul li:hover > .choix--txt {
+  width: 60%;
 }
 
 @keyframes rotation {
@@ -237,10 +264,10 @@ main .principal .coeur__0 {
 }
 @keyframes menu {
   from {
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
   to {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 header {
@@ -348,21 +375,33 @@ footer .ul__icone {
   margin-top: 12px;
   margin-bottom: 0px;
 }
-.principal .etablissement__menu .prix {
-  font-weight: 600;
-}
 .principal .etablissement__menu ul {
   margin-left: 0px;
 }
 .principal .etablissement__menu ul li {
+  position: relative;
   background-color: white;
   border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   padding: 0px 10px 0px 8px;
   margin-bottom: 15px;
   opacity: 0;
+}
+.principal .etablissement__menu ul li .choix--txt {
+  flex-direction: column;
+  width: 90%;
+}
+.principal .etablissement__menu ul li .choix--txt h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.principal .etablissement__menu ul li .choix--txt p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .principal .etablissement__menu ul li div {
   display: flex;
@@ -370,6 +409,11 @@ footer .ul__icone {
 }
 .principal .etablissement__menu ul li div p {
   margin-top: 8px;
+}
+.principal .etablissement__menu ul li .prix {
+  justify-content: flex-end;
+  flex-direction: column;
+  font-weight: 600;
 }
 @media (max-width: 1023px) and (min-width: 740px) {
   .principal .etablissement__menu {

@@ -30,7 +30,9 @@
    .btn:hover::after{
      opacity: 1;
    }
+   .principal{
    .etablissement__menu{
+     ul{
    li {
      @include animation-menu;
      @for $i from 1 through 6 {
@@ -38,8 +40,19 @@
           animation-delay: 150ms * $i;
        }
    }
-  }
-}
+  
+    &:hover>.choix--coche{
+      animation:menu 300ms both;
+    }
+    &:hover>.prix{
+      transform: translateX(-90px);
+      transition:  transform 300ms;
+    } 
+    &:hover> .choix--txt{
+      width: 60%;
+
+    }
+}}}}
 
  
   
