@@ -99,7 +99,7 @@ main .principal .coeur {
 main .principal .coeur__0 {
   background-color: #f6f6f6;
 }
-main .principal .choix--coche {
+main .principal .etablissement__menu .choix--coche {
   overflow: hidden;
   background-color: #99e2d0;
   color: white;

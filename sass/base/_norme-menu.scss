@@ -32,6 +32,7 @@ main{
              background-color: $color-fond;
         }
     }
+   .etablissement__menu{
     .choix--coche{
         overflow: hidden;
         background-color:$color-terciary;
@@ -48,5 +49,6 @@ main{
         align-items: center;
         transform: scaleX(0);
    border-radius: 0px 22px 22px 0px;
+  
     }
-    }}
+    }}}
