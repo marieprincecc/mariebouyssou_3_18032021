@@ -131,27 +131,40 @@ body :focus {
   opacity: 1;
 }
 
-.etablissement__menu li {
+.principal .etablissement__menu ul li {
   animation: anim-opacity 850ms 300ms reverse both;
   transform-origin: top;
 }
-.etablissement__menu li.choix--1 {
+.principal .etablissement__menu ul li.choix--1 {
   animation-delay: 150ms;
 }
-.etablissement__menu li.choix--2 {
+.principal .etablissement__menu ul li.choix--2 {
   animation-delay: 300ms;
 }
-.etablissement__menu li.choix--3 {
+.principal .etablissement__menu ul li.choix--3 {
   animation-delay: 450ms;
 }
-.etablissement__menu li.choix--4 {
+.principal .etablissement__menu ul li.choix--4 {
   animation-delay: 600ms;
 }
-.etablissement__menu li.choix--5 {
+.principal .etablissement__menu ul li.choix--5 {
   animation-delay: 750ms;
 }
-.etablissement__menu li.choix--6 {
+.principal .etablissement__menu ul li.choix--6 {
   animation-delay: 900ms;
+}
+.principal .etablissement__menu ul li:active > .choix--coche {
+  animation: menu 500ms both;
+}
+.principal .etablissement__menu ul li:active > .choix--coche .check {
+  animation: rotation 600ms ease-out;
+}
+.principal .etablissement__menu ul li:active > .prix {
+  transform: translateX(-90px);
+  transition: transform 500ms;
+}
+.principal .etablissement__menu ul li:active > .choix--txt {
+  width: 60%;
 }
 
 @keyframes rotation {
@@ -196,10 +209,10 @@ body :focus {
 }
 @keyframes menu {
   from {
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
   to {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 header {
@@ -397,6 +410,12 @@ footer .ul__icone {
   width: 260px;
   margin-bottom: 8px;
 }
+#fonctionnement .fonction__opt p:hover {
+  background-color: #ece1f9;
+}
+#fonctionnement .fonction__opt p:hover > .opt {
+  color: #9356dc;
+}
 #fonctionnement .fonction__opt p .rond {
   color: #9356dc;
   position: relative;
@@ -438,12 +457,6 @@ figure {
   width: 340px;
   height: 240px;
 }
-figure .new {
-  background-color: #99e2d0;
-  color: #008766;
-  font-size: smaller;
-  font-weight: bold;
-}
 
 @media (min-width: 1024px) {
   main {
@@ -458,6 +471,8 @@ figure .new {
 }
 
 .new {
+  background-color: #99e2d0;
+  color: #008766;
   position: absolute;
   padding: 6px 10px 6px 10px;
   font-size: smaller;
@@ -465,12 +480,12 @@ figure .new {
 }
 
 .loader {
+  background-color: #f6f6f6;
   z-index: -1;
   position: fixed;
   top: 0px;
   height: 100%;
   width: 100%;
-  background-color: #f6f6f6;
   opacity: 0;
   display: flex;
   justify-content: center;

@@ -1,6 +1,3 @@
 .new{
-    position: absolute;
-    padding: 6px 10px 6px 10px;
-    font-size: smaller;
-    font-weight: bold;
+    @include new;
 }

@@ -1,3 +1,7 @@
+@mixin cookie{
+    font-size: $size-cookie;
+    color: $color-cookie;
+}
 @mixin degrade {
     background-image: linear-gradient($color-secondary, $color-primary);
     
@@ -13,7 +17,16 @@
     box-shadow: 0px 6px 9px -2px $ombre-dark;
     
 }
-
+@mixin background-white {
+    background-color: white;
+}
+@mixin fond {
+    background-color: $color-fond;    
+}
+@mixin cadre {
+    border-radius: 22px;    
+    @include shadow;
+}
 @mixin logo {
     width: 150px;
     height: 25px;
@@ -26,10 +39,46 @@
         height: 85px;
     }
     }
-    @mixin cookie{
-        font-size: $size-cookie;
-        color: $color-cookie;
+@mixin img-home{
+    width: 350px;
+    height: 160px;
+}
+@mixin img-menu{
+    width: 450px;
+    height: 350px;
+    max-width: 100%;
+    @include media-lg {
+        width: 2000px;
     }
+    @include media-tab{
+        width:$tab-max;
+        height: 300px;
+    }
+}
+@mixin figure {
+    @include background-white;
+    width: 340px;
+    height: 240px;
+}
+@mixin btn {
+    border-radius: 30px;
+    padding: 20px;
+    border: none;
+}
+@mixin new{
+    background-color: $color-terciary;
+    color:#008766;
+    position: absolute;
+    padding: 6px 10px 6px 10px;
+    font-size: smaller;
+    font-weight: bold; 
+}
+@mixin text-hidden {
+    text-overflow:ellipsis;
+    overflow: hidden;
+   white-space: nowrap;
+}
+   
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -41,18 +90,9 @@
     justify-content: space-between;
       
 }
-@mixin cadre {
-    border-radius: 22px;    
-    @include shadow;
-}
-@mixin btn {
-    border-radius: 30px;
-    padding: 20px;
-    border: none;
-}
-@mixin fond {
-    background-color: $color-fond;    
-}
+
+
+
 @mixin flex-row-w-sa {
     display: flex;
     flex-direction: row;

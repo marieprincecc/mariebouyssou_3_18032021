@@ -18,13 +18,13 @@ header{
     }
         a{
             
-            background-color: white;
+            @include background-white;
             font-size: x-large;
             position: relative;
             bottom: 50px;
             color: $color-sombre;
-        }
-        a{
+    
+        
             @include media-lg{
                 left: 30px;
                 bottom: 80px;

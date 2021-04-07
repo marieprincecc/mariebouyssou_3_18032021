@@ -382,8 +382,8 @@ footer .ul__icone {
   margin-left: 0px;
 }
 .principal .etablissement__menu ul li {
-  position: relative;
   background-color: white;
+  position: relative;
   border-radius: 22px;
   box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
   display: flex;

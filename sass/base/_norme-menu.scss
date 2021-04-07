@@ -1,35 +1,26 @@
 @import"../utils/media";
 main{
-    background-color: $color-fond;
+    @include fond;
     .heading{
-        width: 450px;
-        height: 350px;
-        max-width: 100%;
-        @include media-lg {
-            width: 2000px;
-        }
-        @include media-tab{
-            width:$tab-max;
-            height: 300px;
-        }
+      @include img-menu;
     }
     
     .principal{
-        background-color: $color-fond;
+        @include fond;
         h2{
             @include media-tab{
                 font-size: xx-large;
             }
     }
         .coeur{
-         background-color:$color-fond;
+            @include fond;
          position: relative;
             @include media-lg{
             right: 30px;
         }
        
             &__0{
-             background-color: $color-fond;
+                @include fond;
         }
     }
    .etablissement__menu{

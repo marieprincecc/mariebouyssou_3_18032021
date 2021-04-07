@@ -1,24 +1,15 @@
 img{
-    width: 350px;
-    height: 160px;
+   @include img-home;
 }
 
 .coeur{
-    background-color: white;
-   
+    @include background-white;
     &__0{
-        background-color: white;
+        @include background-white;
         
     }
 }
 figure{
-    background-color: white;
-    width: 340px;
-    height: 240px;
-    .new{
-        background-color: $color-terciary;
-        color:#008766;
-        font-size: smaller;
-        font-weight: bold;
-    }
+ @include figure;
+   
 }

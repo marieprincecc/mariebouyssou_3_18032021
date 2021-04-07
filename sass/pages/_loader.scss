@@ -1,10 +1,10 @@
 .loader{
+    @include fond;
     z-index: -1;
     position: fixed;
     top:0px;
     height: 100%;
     width: 100%;
-    background-color: $color-fond;
     opacity: 0;
     display: flex;
     justify-content: center;

@@ -11,11 +11,6 @@
       }
    }
   
-  
-     
-   
-   
-   
    .coeur:focus{
      
      &>.coeur__0{
@@ -30,33 +25,34 @@
    .btn:hover::after{
      opacity: 1;
    }
-   .principal{
-   .etablissement__menu{
-     ul{
-   li {
-     @include animation-menu;
-     @for $i from 1 through 6 {
-      &.choix--#{$i} {
-          animation-delay: 150ms * $i;
-       }
-   }
+    .principal{
+      .etablissement__menu{
+        ul{
+          li {
+          @include animation-menu;
+          @for $i from 1 through 6 {
+            &.choix--#{$i} {
+            animation-delay: 150ms * $i;
+            }
+          }
   
-    &:active>.choix--coche{
-      animation:menu 500ms both ;
-      .check{
-        animation: rotation 600ms ease-out;
+            &:active>.choix--coche{
+            animation:menu 500ms both ;
+              .check{
+              animation: rotation 600ms ease-out;
+              }
+            }
+            &:active>.prix{
+            transform: translateX(-90px);
+            transition:  transform 500ms;
+            } 
+            &:active> .choix--txt{
+            width: 60%;
+            }
+          }
+        }
       }
     }
-    &:active>.prix{
-      transform: translateX(-90px);
-      transition:  transform 500ms;
-    } 
-    &:active> .choix--txt{
-      width: 60%;
-      
-  }
- 
-}}}}
 
  
   

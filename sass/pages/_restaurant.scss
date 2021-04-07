@@ -2,7 +2,7 @@
     @include fond;
     padding-top: 10px;
     @include media-lg{
-        background-color: white;
+        @include background-white;
         width: 65%;
         padding-top: 50px;
     } 
