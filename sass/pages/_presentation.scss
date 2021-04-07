@@ -1,7 +1,7 @@
 .presentation{
     @include fond;    
         &__position{
-            background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
+            @include background-position;
             text-align: center;
             padding: .5px;
             @include media-lg{
@@ -18,7 +18,7 @@
         }
         &__txt{
             
-            @include flex-column;
+            @include flex-col-space-arround;
             padding-bottom: 30px;
             @include media-lg{
                 padding-top: 70px;

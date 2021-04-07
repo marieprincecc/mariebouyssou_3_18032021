@@ -4,8 +4,7 @@ main{
     }
     #presentation__fonctionnement{
         @include media-lg{
-            display: flex;
-            flex-direction: column;
+        @include flex-col;
         }
     }
 }

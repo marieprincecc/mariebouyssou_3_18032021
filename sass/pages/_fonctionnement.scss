@@ -1,7 +1,7 @@
 #fonctionnement{
     padding-bottom: 70px;
     .fonction{
-    @include flex-column;
+    @include flex-col-space-arround;
         @include media-tab{
         @include flex-row-w-sa;
         }

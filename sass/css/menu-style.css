@@ -100,6 +100,9 @@ main .principal .coeur__0 {
   background-color: #f6f6f6;
 }
 main .principal .etablissement__menu .choix--coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background-color: #99e2d0;
   color: white;
@@ -110,9 +113,6 @@ main .principal .etablissement__menu .choix--coche {
   right: 0;
   top: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: scaleX(0);
   border-radius: 0px 22px 22px 0px;
 }
@@ -340,11 +340,11 @@ footer .ul__icone {
 }
 
 .principal {
+  display: flex;
+  flex-direction: column;
   border-radius: 30px;
   position: relative;
   top: -60px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1024px) {
@@ -393,6 +393,7 @@ footer .ul__icone {
   opacity: 0;
 }
 .principal .etablissement__menu ul li .choix--txt {
+  display: flex;
   flex-direction: column;
   width: 90%;
 }
@@ -414,8 +415,9 @@ footer .ul__icone {
   margin-top: 8px;
 }
 .principal .etablissement__menu ul li .prix {
-  justify-content: flex-end;
+  display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   font-weight: 600;
 }
 @media (max-width: 1023px) and (min-width: 740px) {

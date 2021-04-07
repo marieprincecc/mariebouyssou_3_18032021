@@ -7,10 +7,9 @@
         padding-top: 50px;
     } 
     .restau{
+        @include flex-col;
         padding-bottom: 70px;
-        display: flex;
         align-items: center;
-        flex-direction: column;
         @include media-tab{
            @include flex-row-w-sa;
         }

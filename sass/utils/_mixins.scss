@@ -23,6 +23,9 @@
 @mixin fond {
     background-color: $color-fond;    
 }
+@mixin background-position {
+    background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
+}
 
 @mixin cadre {
     border-radius: 22px;    
@@ -81,10 +84,12 @@
     overflow: hidden;
    white-space: nowrap;
 }   
-
-@mixin flex-column {
+@mixin flex-col {
     display: flex;
     flex-direction: column;
+}
+@mixin flex-col-space-arround {
+    @include flex-col;
     justify-content: space-around;
     text-align: center;
 }
@@ -93,10 +98,15 @@
     justify-content: space-between;
       
 }
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @mixin flex-row-w-sa {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     
 }
