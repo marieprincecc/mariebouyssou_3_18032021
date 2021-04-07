@@ -134,14 +134,14 @@ main .principal .etablissement__menu .choix--coche {
 }
 .btn::after {
   content: "";
+  background-image: linear-gradient(#ff79da, #ae80e5);
+  box-shadow: 0px 6px 9px -2px rgba(79, 79, 79, 0.88);
   position: absolute;
   left: 0px;
   right: 0px;
   top: 0px;
   bottom: 0px;
   z-index: -1;
-  background-image: linear-gradient(#ff79da, #ae80e5);
-  box-shadow: 0px 6px 9px -2px rgba(79, 79, 79, 0.88);
   border-radius: 30px;
   opacity: 0;
 }
