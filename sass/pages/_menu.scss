@@ -2,18 +2,16 @@
     border-radius: 30px;
     position: relative;
     top:-60px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-     @include media-lg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        @include media-lg{
         align-items: initial;
-    }
-   
+        }
     &__titre{
-       @include flex-row-btw;
+        @include flex-row-btw;
         align-items: flex-end;
-      
-    }
+        }
     .etablissement__menu{
         &--plat, &--dessert{
             margin-top: 50px;
@@ -31,49 +29,45 @@
             width: 45px;
             background-color: $color-terciary;
         }
-       h4{
+        h4{
            font-size: larger;
            margin-top: 12px;
            margin-bottom: 0px;
-       }
+        }
       
-       ul{
+        ul{
            margin-left: 0px;
-        li{
-            @include background-white;
-            position: relative;
+            li{
+                @include background-white;
+                position: relative;
             
-            @include cadre;
-           @include flex-row-btw;
-            padding:0px 10px 0px 8px;
-            margin-bottom: 15px; 
-            opacity: 0;
-            .choix--txt{
-               
+                @include cadre;
+                @include flex-row-btw;
+                padding:0px 10px 0px 8px;
+                margin-bottom: 15px; 
+                opacity: 0;
+                .choix--txt{
                 flex-direction: column;
                 width: 90%;
-                h4{
-                   @include text-hidden;
-                }
-                p{
+                    h4{
                     @include text-hidden;
-                }
-              
-                
-            }
-            div{
-               @include flex-row-btw;
-                p{margin-top: 8px;
                     }
-                
-            }
-            .prix{
+                    p{
+                    @include text-hidden;
+                    }
+                }
+                div{
+                @include flex-row-btw;
+                    p{margin-top: 8px;
+                    }
+                }
+                .prix{
                 justify-content: flex-end;
                 flex-direction: column;
                 font-weight: 600;
+                }
             }
         }
-    }
     
         @include media-tab{
             width: 80%;
@@ -82,23 +76,20 @@
         display: grid;
         grid-column: 2;
         grid-row: 2;
-        &--entrée{
+            &--entrée{
             grid-column-start: 1;
             grid-column-end: 2;
-        }
-        &--plat{
+            }
+            &--plat{
             grid-column-start: 2;
             margin-top: 0px;
-        }
-        &--dessert{
+            }
+            &--dessert{
             grid-row: 2;
             grid-column-start: 1;
             grid-column-end: 3;
+            }
+   
         }
-   
     }
-   
-
-}
-
 }

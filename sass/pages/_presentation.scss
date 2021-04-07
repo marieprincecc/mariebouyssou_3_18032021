@@ -1,6 +1,5 @@
 .presentation{
-    @include fond;
-    
+    @include fond;    
         &__position{
             background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
             text-align: center;

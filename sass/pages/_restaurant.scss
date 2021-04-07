@@ -24,10 +24,10 @@
             overflow: hidden;
             margin: 20px 10px 10px 10px;
             position: relative;
-            .new{               
-                top: 15px;
-                right: 15px;            
-                }
+                .new{               
+                    top: 15px;
+                    right: 15px;            
+                    }
             }
             &--txt{
                 @include flex-row-btw;

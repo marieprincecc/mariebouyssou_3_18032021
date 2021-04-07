@@ -1,15 +1,12 @@
 img{
    @include img-home;
 }
-
 .coeur{
     @include background-white;
     &__0{
         @include background-white;
-        
     }
 }
 figure{
  @include figure;
-   
 }

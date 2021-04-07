@@ -1,45 +1,43 @@
-@import"../utils/media";
 main{
     @include fond;
     .heading{
       @include img-menu;
     }
-    
     .principal{
         @include fond;
         h2{
             @include media-tab{
-                font-size: xx-large;
+            font-size: xx-large;
             }
-    }
+        }
         .coeur{
             @include fond;
-         position: relative;
+            position: relative;
             @include media-lg{
             right: 30px;
-        }
-       
+            }
             &__0{
                 @include fond;
+            }
+        }
+        .etablissement__menu{
+            .choix--coche{
+                overflow: hidden;
+                background-color:$color-terciary;
+                color: white;
+                position: absolute;
+                transform-origin: right;
+                width: 80px;
+                height: 100%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scaleX(0);
+                border-radius: 0px 22px 22px 0px;
+            }
         }
     }
-   .etablissement__menu{
-    .choix--coche{
-        overflow: hidden;
-        background-color:$color-terciary;
-        color: white;
-        position: absolute;
-        transform-origin: right;
-        width: 80px;
-        height: 100%;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: scaleX(0);
-   border-radius: 0px 22px 22px 0px;
-  
-    }
-    }}}
+}

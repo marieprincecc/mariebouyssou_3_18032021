@@ -11,21 +11,19 @@
     margin-top: 25px;
     width: 220px;
     align-self: center;
-        &::after{
-            content: "";
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            top:0px;
-            bottom: 0px;
-            z-index: -1;
-            @include degrade-clr;
-            @include dark-shadow;
-            border-radius: 30px;
-            opacity: 0;
-        }
-    
-
+    &::after{
+        content: "";
+        @include degrade-clr;
+        @include dark-shadow;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top:0px;
+        bottom: 0px;
+        z-index: -1;
+        border-radius: 30px;
+        opacity: 0;
+    }
 }
 .coeur{
     margin-right: 10px;
@@ -36,11 +34,7 @@
         position: relative;
         z-index: 1; 
         right: -41px;
-       
-        
-      }
-
-    
     }
+}
 
 
