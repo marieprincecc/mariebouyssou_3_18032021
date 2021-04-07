@@ -36,17 +36,17 @@
             }
           }
   
-            &:active>.choix--coche{
+            &:hover>.choix--coche{
             animation:menu 500ms both ;
               .check{
               animation: rotation 600ms ease-out;
               }
             }
-            &:active>.prix{
+            &:hover>.prix{
             transform: translateX(-90px);
             transition:  transform 500ms;
             } 
-            &:active> .choix--txt{
+            &:hover> .choix--txt{
             width: 60%;
             }
           }
