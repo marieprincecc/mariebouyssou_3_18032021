@@ -1,0 +1,32 @@
+header{
+    height: 50px;
+    @include media-lg{
+        height: 100px;
+    }
+    @include media-tab{
+        height: 80px;
+        padding-top: 10px;
+    }
+    h1{
+    text-align: center;
+    margin: 15px;
+        img{
+        @include logo;
+        }
+    }
+    a{
+    @include background-white;
+    font-size: x-large;
+    position: relative;
+    bottom: 50px;
+    color: $color-sombre;
+        @include media-lg{
+        left: 30px;
+        bottom: 80px;
+        font-size: xx-large;
+        }
+        @include media-tab{
+        bottom: 60px;
+        }
+    }
+}

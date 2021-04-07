@@ -1,0 +1,12 @@
+@mixin media-tab {
+    @media (max-width: $tab-max) and (min-width: $tab-min){
+        @content;
+    }
+    
+}
+@mixin media-lg {
+    @media (min-width:$screen-lg){
+        @content;
+    }
+    
+}

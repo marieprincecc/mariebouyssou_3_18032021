@@ -1,0 +1,10 @@
+main{
+    @include media-lg{
+        display: flex;
+    }
+    #presentation__fonctionnement{
+        @include media-lg{
+        @include flex-col;
+        }
+    }
+}

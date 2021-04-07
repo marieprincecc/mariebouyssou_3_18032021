@@ -1,0 +1,33 @@
+body{
+    z-index: 1;
+    margin: 0;
+    img{
+        object-fit: cover;
+    }
+    h2{
+        margin: 40px 15px 10px 15px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 10px;
+        li{
+            margin: 5px;
+        }
+    }
+    .coeur{
+        margin-right: 10px;
+        &__0{
+            color: #1f1f1f;
+        }
+        &__1{
+            color: $color-primary;
+        }
+    }
+    :focus{
+        outline: none;
+    }
+}

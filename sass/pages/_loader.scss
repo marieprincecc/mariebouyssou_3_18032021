@@ -1,0 +1,13 @@
+.loader{
+    @include flex-center-center;
+    @include fond;
+    z-index: -1;
+    position: fixed;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    .cookie, .cook{
+    @include cookie;
+    }  
+}

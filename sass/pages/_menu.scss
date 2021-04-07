@@ -1,0 +1,94 @@
+.principal{
+    @include flex-col;
+    border-radius: 30px;
+    position: relative;
+    top:-60px;
+    align-items: center;
+        @include media-lg{
+        align-items: initial;
+        }
+    &__titre{
+        @include flex-row-btw;
+        align-items: flex-end;
+        }
+    .etablissement__menu{
+        &--plat, &--dessert{
+            margin-top: 50px;
+        }
+        h3{
+            margin-bottom: 5px;
+            margin-left: 10px;
+            font-weight: 400;
+            font-size: larger;
+        }
+        span{
+            margin-left: 10px;
+            display: block;
+            height: 3px;
+            width: 45px;
+            background-color: $color-terciary;
+        }
+        h4{
+           font-size: larger;
+           margin-top: 12px;
+           margin-bottom: 0px;
+        }
+      
+        ul{
+           margin-left: 0px;
+            li{
+                @include background-white;
+                position: relative;
+            
+                @include cadre;
+                @include flex-row-btw;
+                padding:0px 10px 0px 8px;
+                margin-bottom: 15px; 
+                opacity: 0;
+                .choix--txt{
+                @include flex-col;
+                width: 90%;
+                    h4{
+                    @include text-hidden;
+                    }
+                    p{
+                    @include text-hidden;
+                    }
+                }
+                div{
+                @include flex-row-btw;
+                    p{margin-top: 8px;
+                    }
+                }
+                .prix{
+                @include flex-col;
+                justify-content: flex-end;
+                font-weight: 600;
+                }
+            }
+        }
+    
+        @include media-tab{
+            width: 80%;
+        }
+        @include media-lg{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+            &--entrée{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            }
+            &--plat{
+            grid-column-start: 2;
+            margin-top: 0px;
+            }
+            &--dessert{
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+   
+        }
+    }
+}

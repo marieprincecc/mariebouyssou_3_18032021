@@ -1,0 +1,69 @@
+
+   .loader{
+    @include anim-loader;
+    
+    .cookie{
+       @include anim-cookie;
+       }
+       .cook{
+        @include anim-cook;
+       
+      }
+   }
+  
+   .coeur:focus{
+     
+     &>.coeur__0{
+      opacity: 0;
+      transition: 688ms;
+  
+     } 
+   }
+   .btn::after{
+     transition: opacity 250ms;
+   }
+   .btn:hover::after{
+     opacity: 1;
+   }
+    .principal{
+      .etablissement__menu{
+        ul{
+          li {
+          @include animation-menu;
+          @for $i from 1 through 6 {
+            &.choix--#{$i} {
+            animation-delay: 150ms * $i;
+            }
+          }
+  
+            &:hover>.choix--coche{
+            animation:menu 500ms both ;
+              .check{
+              animation: rotation 600ms ease-out;
+              }
+            }
+            &:hover>.prix{
+            transform: translateX(-90px);
+            transition:  transform 500ms;
+            } 
+            &:hover> .choix--txt{
+            width: 60%;
+            }
+          }
+        }
+      }
+    }
+
+ 
+  
+    
+  
+  
+  
+  
+  
+   
+   
+   
+   
+   

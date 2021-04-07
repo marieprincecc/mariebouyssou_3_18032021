@@ -1,0 +1,32 @@
+.presentation{
+    @include fond;    
+        &__position{
+            @include background-position;
+            text-align: center;
+            padding: .5px;
+            @include media-lg{
+                position: absolute;
+                right: 0px;
+                left: 0px;
+            } 
+            p{
+                .marquer{
+                    position: relative;
+                    right:10px;
+                }
+            }
+        }
+        &__txt{
+            
+            @include flex-col-space-arround;
+            padding-bottom: 30px;
+            @include media-lg{
+                padding-top: 70px;
+                
+            } 
+            h2{
+                padding: 0px 50px 0px 50px;
+            }
+            
+        }
+    }

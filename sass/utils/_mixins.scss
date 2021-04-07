@@ -1,0 +1,135 @@
+@mixin cookie{
+    font-size: $size-cookie;
+    color: $color-cookie;
+}
+@mixin degrade {
+    background-image: linear-gradient($color-secondary, $color-primary);
+    
+}
+@mixin degrade-clr {
+    background-image: linear-gradient($color-secondary, $color-primary-clr);
+    
+}
+@mixin shadow {
+    box-shadow: 0px 6px 9px -5px $color-ombre;   
+}
+@mixin dark-shadow {
+    box-shadow: 0px 6px 9px -2px $ombre-dark;
+    
+}
+@mixin background-white {
+    background-color: white;
+}
+@mixin fond {
+    background-color: $color-fond;    
+}
+@mixin background-position {
+    background: linear-gradient(to bottom, #cfcfcf 0%, #eaeaea 10%, #eaeaea 100%);
+}
+
+@mixin cadre {
+    border-radius: 22px;    
+    @include shadow;
+}
+@mixin logo {
+    width: 150px;
+    height: 25px;
+    @include media-tab{
+        width: 300px;
+        height: 50px;
+    }
+    @include media-lg{
+        width: 500px;
+        height: 85px;
+    }
+    }
+@mixin img-home{
+    width: 350px;
+    height: 160px;
+}
+@mixin img-menu{
+    width: 450px;
+    height: 350px;
+    max-width: 100%;
+    @include media-lg{
+        width: 2000px;
+    }
+    @include media-tab{
+        width:$tab-max;
+        height: 300px;
+    }
+}
+@mixin figure {
+    @include background-white;
+    width: 340px;
+    height: 240px;
+}
+
+@mixin btn {
+    border-radius: 30px;
+    padding: 20px;
+    border: none;
+}
+@mixin new{
+    background-color: $color-terciary;
+    color:#008766;
+    position: absolute;
+    padding: 6px 10px 6px 10px;
+    font-size: smaller;
+    font-weight: bold; 
+}
+
+@mixin text-hidden {
+    text-overflow:ellipsis;
+    overflow: hidden;
+   white-space: nowrap;
+}   
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-col-space-arround {
+    @include flex-col;
+    justify-content: space-around;
+    text-align: center;
+}
+@mixin flex-row-btw {
+    display: flex;
+    justify-content: space-between;
+      
+}
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-w-sa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+@mixin animation-menu {
+    animation:anim-opacity 850ms 300ms reverse both;
+    transform-origin: top;
+    
+}
+@mixin anim-loader {
+    animation: loader 2967.04ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(.28,.89,0,1.08);
+}
+@mixin anim-cookie {
+    animation: rotation;
+         animation-duration:900ms;
+         animation-delay:1000ms;
+         animation-iteration-count:2;
+         animation-timing-function:ease-in-out;
+}
+@mixin anim-cook {
+        animation:anim-opacity;
+        animation-duration:600ms;
+        animation-fill-mode:forwards;
+}

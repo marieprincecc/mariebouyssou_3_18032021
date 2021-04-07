@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+body {
+  font-family: "roboto";
+}
+body .etablissement {
+  font-family: "shrikhand";
+}
+body p {
+  font-weight: 400;
+}
+body h2 {
+  font-weight: 700;
+}
+body h3 {
+  font-weight: 700;
+}
+body .presentation__txt--p {
+  font-weight: 300;
+  font-size: large;
+}
+body footer h4 {
+  font-family: "shrikhand";
+  font-weight: normal;
+  font-size: large;
+}
+
+body {
+  z-index: 1;
+  margin: 0%;
+}
+body img {
+  object-fit: cover;
+}
+body h2 {
+  margin: 40px 15px 10px 15px;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+body ul li {
+  margin: 5px;
+}
+body .coeur {
+  margin-right: 10px;
+}
+body .coeur__0 {
+  color: #1f1f1f;
+}
+body .coeur__1 {
+  color: #9356dc;
+}
+body :focus {
+  outline: none;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+main .heading {
+  width: 450px;
+  height: 350px;
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  main .heading {
+    width: 2000px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .heading {
+    width: 1023px;
+    height: 300px;
+  }
+}
+main .principal {
+  background-color: #f6f6f6;
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  main .principal h2 {
+    font-size: xx-large;
+  }
+}
+main .principal .coeur {
+  background-color: #f6f6f6;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  main .principal .coeur {
+    right: 30px;
+  }
+}
+main .principal .coeur__0 {
+  background-color: #f6f6f6;
+}
+main .principal .etablissement__menu .choix--coche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #99e2d0;
+  color: white;
+  position: absolute;
+  transform-origin: right;
+  width: 80px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  border-radius: 0px 22px 22px 0px;
+}
+
+.btn {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 30px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: medium;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 220px;
+  align-self: center;
+}
+.btn::after {
+  content: "";
+  background-image: linear-gradient(#ff79da, #ae80e5);
+  box-shadow: 0px 6px 9px -2px rgba(79, 79, 79, 0.88);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+
+.coeur {
+  margin-right: 10px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.coeur__0 {
+  position: relative;
+  z-index: 1;
+  right: -41px;
+}
+
+.loader {
+  animation: loader 2967.04ms;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.28, 0.89, 0, 1.08);
+}
+.loader .cookie {
+  animation: rotation;
+  animation-duration: 900ms;
+  animation-delay: 1000ms;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+.loader .cook {
+  animation: anim-opacity;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+.coeur:focus > .coeur__0 {
+  opacity: 0;
+  transition: 688ms;
+}
+
+.btn::after {
+  transition: opacity 250ms;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.principal .etablissement__menu ul li {
+  animation: anim-opacity 850ms 300ms reverse both;
+  transform-origin: top;
+}
+.principal .etablissement__menu ul li.choix--1 {
+  animation-delay: 150ms;
+}
+.principal .etablissement__menu ul li.choix--2 {
+  animation-delay: 300ms;
+}
+.principal .etablissement__menu ul li.choix--3 {
+  animation-delay: 450ms;
+}
+.principal .etablissement__menu ul li.choix--4 {
+  animation-delay: 600ms;
+}
+.principal .etablissement__menu ul li.choix--5 {
+  animation-delay: 750ms;
+}
+.principal .etablissement__menu ul li.choix--6 {
+  animation-delay: 900ms;
+}
+.principal .etablissement__menu ul li:hover > .choix--coche {
+  animation: menu 500ms both;
+}
+.principal .etablissement__menu ul li:hover > .choix--coche .check {
+  animation: rotation 600ms ease-out;
+}
+.principal .etablissement__menu ul li:hover > .prix {
+  transform: translateX(-90px);
+  transition: transform 500ms;
+}
+.principal .etablissement__menu ul li:hover > .choix--txt {
+  width: 60%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anim-opacity {
+  0% {
+    z-index: 3;
+    opacity: 1;
+  }
+  10% {
+    z-index: 3;
+    opacity: 1;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    z-index: 3;
+    opacity: 0;
+  }
+  15% {
+    z-index: 3;
+    opacity: 1;
+  }
+  85% {
+    z-index: 3;
+    opacity: 1;
+  }
+  100% {
+    z-index: 3;
+    opacity: 0;
+  }
+}
+@keyframes menu {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+header {
+  height: 50px;
+}
+@media (min-width: 1024px) {
+  header {
+    height: 100px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header {
+    height: 80px;
+    padding-top: 10px;
+  }
+}
+header h1 {
+  text-align: center;
+  margin: 15px;
+}
+header h1 img {
+  width: 150px;
+  height: 25px;
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header h1 img {
+    width: 300px;
+    height: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  header h1 img {
+    width: 500px;
+    height: 85px;
+  }
+}
+header a {
+  background-color: white;
+  font-size: x-large;
+  position: relative;
+  bottom: 50px;
+  color: #353535;
+}
+@media (min-width: 1024px) {
+  header a {
+    left: 30px;
+    bottom: 80px;
+    font-size: xx-large;
+  }
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  header a {
+    bottom: 60px;
+  }
+}
+
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 10px;
+}
+footer h4 {
+  margin: 0px 0px 10px 0px;
+}
+footer .ul__icone {
+  font-size: small;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  position: relative;
+  top: -60px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .principal {
+    align-items: initial;
+  }
+}
+.principal__titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.principal .etablissement__menu--plat, .principal .etablissement__menu--dessert {
+  margin-top: 50px;
+}
+.principal .etablissement__menu h3 {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: larger;
+}
+.principal .etablissement__menu span {
+  margin-left: 10px;
+  display: block;
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
+}
+.principal .etablissement__menu h4 {
+  font-size: larger;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+.principal .etablissement__menu ul {
+  margin-left: 0px;
+}
+.principal .etablissement__menu ul li {
+  background-color: white;
+  position: relative;
+  border-radius: 22px;
+  box-shadow: 0px 6px 9px -5px rgba(130, 130, 130, 0.88);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 8px;
+  margin-bottom: 15px;
+  opacity: 0;
+}
+.principal .etablissement__menu ul li .choix--txt {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.principal .etablissement__menu ul li .choix--txt h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.principal .etablissement__menu ul li .choix--txt p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.principal .etablissement__menu ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+.principal .etablissement__menu ul li div p {
+  margin-top: 8px;
+}
+.principal .etablissement__menu ul li .prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+@media (max-width: 1023px) and (min-width: 740px) {
+  .principal .etablissement__menu {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .principal .etablissement__menu {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .principal .etablissement__menu--entrée {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .principal .etablissement__menu--plat {
+    grid-column-start: 2;
+    margin-top: 0px;
+  }
+  .principal .etablissement__menu--dessert {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+/*# sourceMappingURL=menu-style.css.map */

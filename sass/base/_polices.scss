@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
+body{
+    font-family: "roboto";
+    .etablissement{
+        font-family: "shrikhand";
+    }
+    p{
+        font-weight: 400;
+    }
+    h2{
+        font-weight: 700;
+    }
+    h3{
+        font-weight: 700;
+    }
+   .presentation__txt--p{
+    font-weight: 300;
+    font-size: large;
+   }
+    footer{
+        h4{
+            font-family:"shrikhand";
+            font-weight: normal;
+            font-size: large;
+        }
+       
+    }
+}

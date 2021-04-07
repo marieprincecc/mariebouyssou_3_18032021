@@ -1,0 +1,50 @@
+#restaurant{
+    @include fond;
+    padding-top: 10px;
+    @include media-lg{
+        @include background-white;
+        width: 65%;
+        padding-top: 50px;
+    } 
+    .restau{
+        @include flex-col;
+        padding-bottom: 70px;
+        align-items: center;
+        @include media-tab{
+           @include flex-row-w-sa;
+        }
+        @include media-lg{
+            @include flex-row-w-sa;
+            margin-top: 40px;
+        } 
+        &__prev{
+            figure{
+            @include cadre;
+            overflow: hidden;
+            margin: 20px 10px 10px 10px;
+            position: relative;
+                .new{               
+                    top: 15px;
+                    right: 15px;            
+                    }
+            }
+            &--txt{
+                @include flex-row-btw;
+                a{
+                    div{
+                        margin: 8px 0px 0px 10px;
+                        h3{
+                            margin: 0px;
+                        }
+                        p{
+                            margin: 5px 0px 0px 0px;
+                        }
+                    }
+                }
+               
+               
+               
+            }    
+        }
+    }
+}
