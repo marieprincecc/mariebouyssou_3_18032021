@@ -27,7 +27,7 @@ body footer h4 {
 
 body {
   z-index: 1;
-  margin: 0%;
+  margin: 0;
 }
 body img {
   object-fit: cover;
@@ -153,17 +153,17 @@ body :focus {
 .principal .etablissement__menu ul li.choix--6 {
   animation-delay: 900ms;
 }
-.principal .etablissement__menu ul li:active > .choix--coche {
+.principal .etablissement__menu ul li:hover > .choix--coche {
   animation: menu 500ms both;
 }
-.principal .etablissement__menu ul li:active > .choix--coche .check {
+.principal .etablissement__menu ul li:hover > .choix--coche .check {
   animation: rotation 600ms ease-out;
 }
-.principal .etablissement__menu ul li:active > .prix {
+.principal .etablissement__menu ul li:hover > .prix {
   transform: translateX(-90px);
   transition: transform 500ms;
 }
-.principal .etablissement__menu ul li:active > .choix--txt {
+.principal .etablissement__menu ul li:hover > .choix--txt {
   width: 60%;
 }
 
@@ -231,7 +231,6 @@ header {
 }
 header h1 {
   text-align: center;
-  margin: 15px;
 }
 header h1 img {
   width: 150px;
