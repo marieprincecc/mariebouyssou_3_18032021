@@ -337,6 +337,9 @@ footer h4 {
 footer .ul__icone {
   font-size: small;
 }
+footer .contact {
+  color: white;
+}
 
 .principal {
   display: flex;

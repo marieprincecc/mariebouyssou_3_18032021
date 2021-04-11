@@ -279,6 +279,9 @@ footer h4 {
 footer .ul__icone {
   font-size: small;
 }
+footer .contact {
+  color: white;
+}
 
 #restaurant {
   background-color: #f6f6f6;
