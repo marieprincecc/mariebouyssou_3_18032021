@@ -64,7 +64,7 @@ main {
   background-color: #f6f6f6;
 }
 main .heading {
-  height: 350px;
+  height: auto;
   max-width: 100%;
 }
 @media (min-width: 1024px) {

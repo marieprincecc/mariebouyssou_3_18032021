@@ -48,7 +48,7 @@
     height: 160px;
 }
 @mixin img-menu{
-    height: 350px;
+    height: auto;
     max-width: 100%;
     @include media-lg{
         width: 2000px;
