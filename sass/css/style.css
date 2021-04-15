@@ -331,15 +331,14 @@ footer .contact {
 #restaurant .restau__prev--txt {
   display: flex;
   justify-content: space-between;
+  margin-left: 10px;
 }
-#restaurant .restau__prev--txt a div {
-  margin: 8px 0px 0px 10px;
+#restaurant .restau__prev--txt h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-#restaurant .restau__prev--txt a div h3 {
-  margin: 0px;
-}
-#restaurant .restau__prev--txt a div p {
-  margin: 5px 0px 0px 0px;
+#restaurant .restau__prev--txt p {
+  margin-top: 8px;
 }
 
 .presentation {

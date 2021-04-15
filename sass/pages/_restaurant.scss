@@ -30,20 +30,15 @@
             }
             &--txt{
                 @include flex-row-btw;
-                a{
-                    div{
-                        margin: 8px 0px 0px 10px;
-                        h3{
-                            margin: 0px;
-                        }
-                        p{
-                            margin: 5px 0px 0px 0px;
-                        }
-                    }
+                margin-left: 10px;
+                
+                h3{
+                    margin-top: 10px;
+                    margin-bottom: 0px;
                 }
-               
-               
-               
+                p{
+                    margin-top:8px;
+                }    
             }    
         }
     }
