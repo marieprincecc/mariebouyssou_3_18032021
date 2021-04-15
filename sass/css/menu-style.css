@@ -64,7 +64,6 @@ main {
   background-color: #f6f6f6;
 }
 main .heading {
-  width: 450px;
   height: 350px;
   max-width: 100%;
 }
@@ -106,6 +105,7 @@ main .principal .etablissement__menu .choix--coche {
   overflow: hidden;
   background-color: #99e2d0;
   color: white;
+  font-size: x-large;
   position: absolute;
   transform-origin: right;
   width: 80px;
